@@ -31,6 +31,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    gap: px;
     align-items: center;
 }
 nav ul li {
@@ -41,8 +42,13 @@ nav ul li a, nav ul li button {
     color: #fff;
     font-weight: 700;
     text-decoration: none;
-    padding: 10px 15px;
-    display: block;
+    padding: 1px 14px;
+}
+nav ul li .loginbutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
 }
 nav ul li button {
     background-color: transparent;
@@ -98,6 +104,10 @@ nav ul li ul li a {
     flex-direction: row;
     gap: 10px;
     align-items: center;
+}
+.fa-shopping-bag {
+    color: #66fcf1;
+    font-size: 1.5rem;
 }
 @media (max-width: 768px) {
     nav ul {
