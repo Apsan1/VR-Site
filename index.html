@@ -3,9 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virtual Reality</title>
+    <link rel="icon" href="images/CompanyLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Virtual Reality - Apsan</title>
+    <script src="https://kit.fontawesome.com/d9d1ddfe3a.js" crossorigin="anonymous"></script>
+    <style>
+
+
+    </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="companyLogo">
+                <img src="images/CompanyLogo.png" alt="Virtual Reality Logo">
+                <h1>Virtual Reality</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </a>
+                    <ul>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#"><img src="images/icons/shopping-bag.svg" alt="Shopping bag"></a></li>
+                <li><button class="getStarted button">Get Started</button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="landing-items">
+        <div class="landing-item">
+            <div class="info">
+                <h2>Where Reality Ends And</h2>
+                <h1>Imagination <br> Begins</h1>
+                <p>We specialize in providing cutting-edge Virtual Reality solutions that transport you to <br> immersive digital worlds.</p>
+                <div class="landing-buttons">
+                    <button class="explorebtn">Explore More</button>
+                    <button class="playbtn"><i class="fa fa-play"></i></button>
+                    <p>Watch Intro</p>
+                </div> 
+            </div>
+            <img class="boy-hero" src="images/hero-img2.png" alt="Landing Image 1">
+        </div>
     
+        <div class="landing-item">
+            <div class="info">
+                <h2>Where Reality Ends And</h1>
+                <h1>Imagination <br> Begins</h1>
+                <p>We specialize in providing cutting-edge Virtual Reality solutions that transport you to <br> immersive digital worlds.</p>
+                <div class="landing-buttons">
+                    <button class="explorebtn">Explore More</button>
+                    <button class="playbtn"><i class="fa fa-play"></i></button>
+                    <p>Watch Intro</p>
+                </div>
+            </div>
+            <img class="girl-hero" src="images/hero-img.png" alt="Landing Image 2">
+        </div>
+    </section>
+    <div class="carousel-controls">
+        <button id="prev">&lt;</button>
+        <button id="next">&gt;</button>
+    </div>
+    <div class="radio-buttons">
+        <input type="radio" name="radio" id="radio1" checked>
+        <label for="radio1"></label>
+        
+        <input type="radio" name="radio" id="radio2">
+        <label for="radio2"></label>
+    </div>
+    <script>
+        const items = document.querySelectorAll('.landing-item');
+        const radio = document.querySelectorAll('.radio-buttons input');
+        const radio1 = document.getElementById('radio1');
+        const radio2 = document.getElementById('radio2');
+        const totalItems = items.length;
+        let currentItem = 0;
+        let isEnabled = true;
+
+        function changeItem(index) {
+            currentItem = (index + totalItems) % totalItems;
+            items.forEach((item, i) => {
+                item.style.display = i === currentItem ? 'flex' : 'none';
+            });
+        }
+
+        document.getElementById('next').addEventListener('click', () => {
+            if (isEnabled) {
+                changeItem(currentItem + 1);
+            }
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            if (isEnabled) {
+                changeItem(currentItem - 1);
+            }
+        });
+
+        radio1.addEventListener('click', () => {
+            changeItem(0);        });
+
+        radio2.addEventListener('click', () => {
+            changeItem(1);
+        });
+    </script>
 </body>
 </html>

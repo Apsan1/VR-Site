@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+body {
+    font-family: 'Sen', sans-serif;
+    background-color: #000000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 0.5% 5%;
+    background-color: #000000;
+}
+nav img {
+    height: 37px;
+    width: auto;
+}
+nav h1 {
+    margin: 0;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    margin: 0 1px;
+    position: relative;
+}
+nav ul li a, nav ul li button {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+nav ul li button {
+    background-color: transparent;
+    font: inherit;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 150px ;
+    height: 55px;
+    color: #66fcf1;
+    border: 2px solid #66fcf1;
+    cursor: pointer;
+}
+nav ul li button:hover {
+    background-color: #66fcf1;
+    color: #000000;
+}
+nav ul li img {
+    height: 18px;
+    width: auto;
+    margin-left: 10px;
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    z-index: 1000;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li {
+    margin: 0;
+}
+nav ul li ul li a {
+    padding: 10px;
+}
+.nav-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.nav-menu {
+    display: flex;
+}
+.nav-menu.active {
+    display: none;
+}
+.companyLogo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background-color: #000000;
+    }
+    .nav-menu.active {
+        display: flex;
+    }
+    .nav-toggle {
+        display: block;
+    }
+}
+
+.landing-items {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.landing-item {
+    min-width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 5%;
+}
+.landing-item .info {
+    max-width: 60%;
+}
+
+.landing-item img {
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+.girl-hero {
+    position: relative;
+    z-index: 1;
+    margin-top: 90px;
+    width: 600px;
+    margin-right: 81px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.boy-hero{
+    position: absolute;
+    z-index: 1;
+    margin-right: 10px;
+    width: 1000px;
+}
+.landing-item h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #66fcf1;
+}
+.landing-item h1 {
+    font-size: 6rem;
+    line-height: 1.3;
+    margin: 10px 0;
+    color: #fff;
+}
+.landing-item p {
+    font-size: 1rem;
+    margin: 20px 0;
+    color: #fff;
+}
+.landing-buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+.landing-buttons button {
+    background-color: #66fcf1;
+    font: 1em 'Sen', sans-serif;
+    font-weight: 700;
+    color: #474646;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.landing-buttons .explorebtn{
+    width: 150px;
+    height: 60px;
+}
+.landing-buttons .explorebtn:hover{
+    background-color: #f78550;
+}
+.landing-buttons p {
+    margin: 0;
+}
+.landing-buttons .playbtn {
+    background-color: #66fcf1;
+    color: #000000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.landing-buttons p {
+    font-size: 1.5rem;
+    color: rgb(222, 222, 222);
+    font-weight: 600;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+#prev {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    transform: translateY(-50%);
+    left: 0;
+    margin-left: 50px;
+    border: 1px solid #66fcf1;
+    color: #66fcf1;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#next {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    transform: translateY(-50%);
+    right: 0;
+    margin-right: 50px;
+    border: 1px solid #66fcf1;
+    color: #66fcf1;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prev:hover, #next:hover {
+    background-color: #66fcf1;
+    color: #000000;
+}
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    }
+.radio-buttons input[type="radio"] {
+    display: none;
+    }
+.radio-buttons label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc; 
+    margin-right: 10px;
+    cursor: pointer;
+    }
+
+.radio-buttons input[type="radio"]:checked + label {
+background-color: #66fcf1;
+}
