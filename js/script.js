@@ -31,3 +31,23 @@ radio1.addEventListener('click', () => {
 radio2.addEventListener('click', () => {
     changeItem(1);
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.services-carousel');
+    const services = document.querySelectorAll('.services');
+    const prevButton = document.getElementById('services-prev');
+    const nextButton = document.getElementById('services-next');
+
+    function moveNext() {
+        const firstService = carousel.firstElementChild;
+        carousel.appendChild(firstService);
+    }
+
+    function movePrev() {
+        const lastService = carousel.lastElementChild;
+        carousel.insertBefore(lastService, carousel.firstElementChild);
+    }
+
+    nextButton.addEventListener('click', moveNext);
+    prevButton.addEventListener('click', movePrev);
+});
