@@ -291,3 +291,18 @@ nav ul li ul li a {
 .radio-buttons input[type="radio"]:checked + label {
 background-color: #66fcf1;
 }
+
+.explorebtn {
+    background-color: transparent;
+    color: #66fcf1;
+    font: 1em 'Sen', sans-serif;
+    border: 2px solid #66fcf1;
+    width: 150px;
+    height: 60px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.explorebtn:hover {
+    background-color: #66fcf1;
+    color: #000000;
+}
