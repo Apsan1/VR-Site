@@ -306,3 +306,57 @@ background-color: #66fcf1;
     background-color: #66fcf1;
     color: #000000;
 }
+.whyus-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: #0b0c10;
+}
+
+.whyus {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 10px;
+    border: 2px solid #66fcf1;
+    padding: 10px 30px;
+}
+
+.whyus h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0%;
+}
+
+.whyus p {
+    font-size: 1.2rem;
+}
+
+.whyus button {
+    margin-bottom: 20px;
+}
+
+.features-list{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.features{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+
+.features .featuresImg{
+    background-color: #121212;
+    padding: 20px;
+}
+
+.features .featuresImg img{
+    width: 30px;
+    height: 30px;
+}
