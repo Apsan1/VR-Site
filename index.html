@@ -9,8 +9,110 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d9d1ddfe3a.js" crossorigin="anonymous"></script>
     <style>
-
-
+        .Services-section {
+            background-color: #0b0c10;
+            padding: 50px 0;
+        }
+        .Services-section h2 {
+            color: #66fcf1;
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0%;
+        }
+        .Services-section .info {
+            padding: 50px 80px;
+        }
+        .Services-section .info .title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+            padding: 10px 0px;
+        }
+        .Services-section .info h1 {
+            margin-top: 5px;
+            font-size: 2.8rem;
+            font-weight: 600;
+        }
+        .Services-section .info button {
+            padding: 10px 20px;
+            width: 200px;
+            font: inherit;
+            font-weight: 500;
+        }
+        .services-carousel {
+            display: flex;
+            flex-direction: row;
+            padding: 0px 30px;
+            position: relative;
+        }
+        
+        .services {
+            width: 440px;
+            height: 420px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .services-img {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .services-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .services-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 40px;
+            color: white;
+        }
+        
+        .services-info h2 {
+            color: #66fcf1;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 3px;
+            margin: 0;
+        }
+        
+        .services-info h1 {
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin: 5px 0 0;
+        }
+        
+        .services-carousel-controls {
+            display: flex;
+            width: 85vw;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            transform: translateY(-250px);
+            padding: 0 100px;
+            z-index: 2;
+        }
+        
+        .services-carousel-controls button {
+            width: 60px;
+            height: 60px;
+            font: inherit;
+            font-weight: 500;
+            background-color: #66fcf1;
+            color: #000;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -169,41 +271,62 @@
         </div>
     </div>
     </section>
-
+    <section class="Services-section">     
+        <div class="info">
+            <h2>Services</h2>
+            <div class="title">
+                <h1>
+                    Discover Our Best VR Services
+                </h1>
+                <button class="explorebtn">
+                    View All Services
+                </button>
+            </div>
+        </div>
+        <div class="services-carousel">
+            <div class="services">
+                <div class="services-img">
+                    <img src="images/VR-1.jpg" alt="VR 1">
+                </div>
+                <div class="services-info">
+                    <h2>Service</h2>
+                    <h1>Marketing VR</h1>
+                </div>
+            </div>
+            <div class="services">
+                <div class="services-img">
+                    <img src="images/VR-2.jpg" alt="VR 2">
+                </div>
+                <div class="services-info">
+                    <h2>Service</h2>
+                    <h1>Game VR</h1>
+                </div>
+        </div>
+        <div class="services">
+            <div class="services-img">
+                <img src="images/VR-3.jpg" alt="VR 3">
+            </div>
+            <div class="services-info">
+                <h2>Service</h2>
+                <h1>Commercial VR</h1>
+            </div>
+        </div>
+        <div class="services">
+            <div class="services-img">
+                <img src="images/VR-4.jpg" alt="VR 4">
+            </div>
+            <div class="services-info">
+                <h2>Service</h2>
+                <h1>Product VR</h1>
+            </div>
+        </div>
+        </div>
+    <div class="services-carousel-controls">
+        <button id="services-prev">&lt;</button>
+        <button id="services-next">&gt;</button>
+    </div>
+    </section>
     <script>
-        const items = document.querySelectorAll('.landing-item');
-        const radio = document.querySelectorAll('.radio-buttons input');
-        const radio1 = document.getElementById('radio1');
-        const radio2 = document.getElementById('radio2');
-        const totalItems = items.length;
-        let currentItem = 0;
-        let isEnabled = true;
-
-        function changeItem(index) {
-            currentItem = (index + totalItems) % totalItems;
-            items.forEach((item, i) => {
-                item.style.display = i === currentItem ? 'flex' : 'none';
-            });
-        }
-
-        document.getElementById('next').addEventListener('click', () => {
-            if (isEnabled) {
-                changeItem(currentItem + 1);
-            }
-        });
-
-        document.getElementById('prev').addEventListener('click', () => {
-            if (isEnabled) {
-                changeItem(currentItem - 1);
-            }
-        });
-
-        radio1.addEventListener('click', () => {
-            changeItem(0);        });
-
-        radio2.addEventListener('click', () => {
-            changeItem(1);
-        });
     </script>
 </body>
 </html>
