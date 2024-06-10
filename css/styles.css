@@ -941,3 +941,20 @@ background-color: #66fcf1;
     background-color: #f78550;
     border: #f78550;
 }
+.our-clients {
+    background-color: #121212;
+    padding: 80px 0;
+}
+.clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.client {
+    width: 220px;
+}
+.client img {
+    width: 100%;
+    height: 100%;
+}
