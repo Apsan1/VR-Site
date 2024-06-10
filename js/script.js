@@ -51,3 +51,24 @@ document.addEventListener('DOMContentLoaded', function () {
     nextButton.addEventListener('click', moveNext);
     prevButton.addEventListener('click', movePrev);
 });
+
+// Testimonial Carousel
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.querySelector('.testimonial-carousel');
+    const testimonial = document.querySelectorAll('.testimonial');
+    const prevButton = document.getElementById('testimonial-prev');
+    const nextButton = document.getElementById('testimonial-next');
+
+    function moveNext() {
+        const firstFeedback = carousel.firstElementChild;
+        carousel.appendChild(firstFeedback);
+    }
+
+    function movePrev() {
+        const lastFeedback = carousel.lastElementChild;
+        carousel.prepend(lastFeedback);
+    }
+
+    nextButton.addEventListener('click', moveNext);
+    prevButton.addEventListener('click', movePrev);
+});
