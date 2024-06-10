@@ -90,3 +90,58 @@ document.addEventListener('DOMContentLoaded', function () {
     nextButton.addEventListener('click', moveNext);
     prevButton.addEventListener('click', movePrev);
 });
+
+// Function to handle mouseover event
+function handleMouseOver() {
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+
+  const carouselControls = document.querySelector('.carousel-controls');
+  carouselControls.style.display = 'flex'; // Show control buttons
+  prev.style.animation = 'slideInLeft 0.5s forwards'; // Slide in from the left
+  next.style.animation = 'slideInRight 0.5s forwards'; // Slide in from the right
+}
+
+// Function to handle mouseout event
+function handleMouseOut() {
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  
+  const carouselControls = document.querySelector('.carousel-controls');
+  prev.style.animation = 'slideOutLeft 0.5s forwards'; // Slide out to the left
+  next.style.animation = 'slideOutRight 0.5s forwards'; // Slide out to the right
+  setTimeout(() => {
+    carouselControls.style.display = 'none'; // Hide control buttons after animation
+  }, 500);
+} 
+
+function revealfastOnScroll() {
+    var reveals = document.querySelectorAll('.revealFast');
+    //add reveal-up-fast class to the elements with the class of revealFast
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 50;
+
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('reveal-up-fast');
+        }
+    }
+}
+
+function revealSlowonScroll(){
+    var reveals = document.querySelectorAll('.revealSlow');
+    //add revealSlow class to the elements with the class of revealSlow
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 50;
+
+        if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('reveal-up-slow');
+        }
+    }
+}
+
+window.addEventListener('scroll', revealfastOnScroll);
+window.addEventListener('scroll', revealSlowonScroll);
