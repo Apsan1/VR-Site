@@ -172,7 +172,6 @@ section {
     margin-left: 100px;
     margin-top: 300px;
     right: 180px;
-    z-index: 1;
     pointer-events: none;
 }
 .girl-hero img {
@@ -182,7 +181,6 @@ section {
 }
 .boy-hero{
     position: absolute;
-    z-index: 1;
     width: 1000px;
     height: 800px;
     right: 40px;
@@ -302,7 +300,7 @@ section {
     position: absolute;
     bottom: 10px;
     width: 100%;
-    transform: translateY(-30px);
+    transform: translateY(-70px);
     display: flex;
     justify-content: center;
     }
