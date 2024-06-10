@@ -93,13 +93,60 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Function to handle mouseover event
 function handleMouseOver() {
-  const prev = document.getElementById('prev');
-  const next = document.getElementById('next');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    prev.style.display = 'block';
+    next.style.display = 'block';
+    const carouselControls = document.querySelector('.carousel-controls');
+    carouselControls.style.display = 'flex'; // Show control buttons
+    prev.style.animation = 'slideInLeft 0.5s forwards'; // Slide in from the left
+    next.style.animation = 'slideInRight 0.5s forwards'; // Slide in from the right
+}
 
-  const carouselControls = document.querySelector('.carousel-controls');
-  carouselControls.style.display = 'flex'; // Show control buttons
-  prev.style.animation = 'slideInLeft 0.5s forwards'; // Slide in from the left
-  next.style.animation = 'slideInRight 0.5s forwards'; // Slide in from the right
+function ServicesHandleMouseOver() {
+    const prev = document.getElementById('services-prev');
+    const next = document.getElementById('services-next');
+    prev.style.display = 'block';
+    next.style.display = 'block';
+    const carouselControls = document.querySelector('.services-carousel-controls');
+    carouselControls.style.display = 'flex'; // Show control buttons
+    prev.style.animation = 'slideInLeft 0.5s forwards'; // Slide in from the left
+    next.style.animation = 'slideInRight 0.5s forwards'; // Slide in from the right
+}
+
+function TestimonialHandleMouseOver() {
+    const prev = document.getElementById('testimonial-prev');
+    const next = document.getElementById('testimonial-next');
+    prev.style.display = 'block';
+    next.style.display = 'block';
+    const carouselControls = document.querySelector('.testimonial-carousel-controls');
+    carouselControls.style.display = 'flex'; // Show control buttons
+    prev.style.animation = 'slideInLeft 0.5s forwards'; // Slide in from the left
+    next.style.animation = 'slideInRight 0.5s forwards'; // Slide in from the right
+}
+
+function ServicesHandleMouseOut() {
+    const prev = document.getElementById('services-prev');
+    const next = document.getElementById('services-next');
+    
+    const carouselControls = document.querySelector('.services-carousel-controls');
+    prev.style.animation = 'slideOutLeft 0.5s forwards'; // Slide out to the left
+    next.style.animation = 'slideOutRight 0.5s forwards'; // Slide out to the right
+    setTimeout(() => {
+      carouselControls.style.display = 'none'; // Hide control buttons after animation
+    }, 500);
+}
+
+function TestimonialHandleMouseOut() {
+    const prev = document.getElementById('testimonial-prev');
+    const next = document.getElementById('testimonial-next');
+    
+    const carouselControls = document.querySelector('.testimonial-carousel-controls');
+    prev.style.animation = 'slideOutLeft 0.5s forwards'; // Slide out to the left
+    next.style.animation = 'slideOutRight 0.5s forwards'; // Slide out to the right
+    setTimeout(() => {
+      carouselControls.style.display = 'none'; // Hide control buttons after animation
+    }, 500);
 }
 
 // Function to handle mouseout event
