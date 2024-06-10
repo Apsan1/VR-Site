@@ -10,6 +10,94 @@
     <script src="https://kit.fontawesome.com/d9d1ddfe3a.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
     <style>
+        .summary{
+            padding: 50px 80px;
+        }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .our-info{
+            display: grid;  
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            justify-content: space-between;
+            border-bottom: 1px solid #2d2f38;
+        }   
+        .footer .companyLogo img{
+            width: 50px;
+            height: 50px;
+        }
+        .companyLogo h1{
+            font-size: 1.5rem;
+            color: white;
+        }
+        .quick-links h2{
+            color: white;
+            font-size: 1.5rem;
+        }
+        .quick-links ul{
+            list-style: none;
+            margin-top: 40px;
+            padding: 0;
+        }
+        .quick-links li{
+            font-size: 1.1rem;
+            color: white;
+            margin: 20px 0;
+        }
+        .quick-links li a{
+            color: white;
+            text-decoration: none;
+        }
+        .quick-links li i{
+            color: #66fcf1;
+            margin-right: 10px;
+        }
+        .recent-news h2{
+            color: white;
+            font-size: 1.5rem;
+        }
+        .recent-news ul{
+            margin-top: 40px;
+            list-style: none;
+            padding: 0;
+        }
+        .recent-news li{
+            font-size: 1.1rem;
+            color: white;
+            margin: 20px 0;
+        }
+        .recent-news li a{
+            color: white;
+            text-decoration: none;
+        }
+        .recent-news li i{
+            font-size: 0.8rem;
+            margin-right: 10px;
+        }
+        .quickcontact h2{
+            color: white;
+            font-size: 1.5rem;
+        }
+        .quickcontact ul{
+            list-style: none;
+            padding: 0;
+        }
+        .quickcontact li{
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 35px 0;
+        }
+        .quickcontact li a{
+            color: white;
+            text-decoration: none;
+        }
+        .quickcontact li i{
+            margin-right: 10px;
+        }
 
     </style>
 </head>
@@ -503,6 +591,80 @@
             <div class="client">
                 <img src="images/clients/client5.png" alt="Client 5">
             </div>
+        </div>
+    </section>
+    <section class="summary">
+    <div class="footer">
+        <div class="our-info">
+            <div class="info">
+                <div class="companyLogo">
+                    <img src="images/CompanyLogo.png" alt="Company Logo">
+                    <h1>Virtual Reality</h1>
+                </div>
+                <p>Nsectetur adipisicing elit, sed do
+                   eiusmod tempor incididunt ut labore 
+                   et dolore magna aliqua. Ut enim ad 
+                   minim veniam</p>
+            </div>
+            <div class="quick-links">
+                <h2>Quick links</h2>
+                <ul>
+                    <li><i class="fa fa-check"></i><a href="#">Our Services</a></li>
+                    <li><i class="fa fa-check"></i><a href="#">Our Portfolio</a></li>
+                    <li><i class="fa fa-check"></i><a href="#">Contact </a></li>
+                    <li><i class="fa fa-check"></i><a href="#">News</a></li>
+                </ul>
+            </div>
+            <div class = "recent-news">
+                <h2>Recent News</h2>
+                <ul>
+                    <li><i class="fa fa-clock"></i><a href="#"> Blocks (2) </a></li>
+                    <li><i class="fa fa-clock"></i><a href="#"> ESE (2) </a></li>
+                    <li><i class="fa fa-clock"></i><a href="#"> Gutenify (2) </a></li>
+                </ul>
+            </div>
+            <div class="quickcontact">
+                <h2>Quick Contact</h2>
+                <ul>
+                    <li>New South Wales, Australia</li>
+                    <li>example@example.com</li>
+                    <li>123 3456679 </li>
+                    <li>10 AM – 5 PM </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="extra-info">
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="subscribe">
+                <h2>Subscribe</h2>
+                <p>Subscribe to our newsletter to get the latest news and offers</p>
+                <input type="email" placeholder="Enter your email">
+                <button class="explorebtn">Subscribe</button>
+            </div>
+            <div class="payment">
+                <h2>Payment Methods</h2>
+                <ul>
+                    <li><i class="fa fa-cc-visa"></i></li>
+                    <li><i class="fa fa-cc-paypal"></i></li>
+                    <li><i class="fa fa-cc-mastercard"></i></li>
+                    <li><i class="fab fa-cc-apple-pay"></i></li>
+                    <li><i class="fa fa-cc-amex"></i></li>
+                </ul>
+            </div>
+        </div>
+        <div class="foot-note">
+            <p>
+                Proudly powered by Gutenify and WordPress.
+            </p>
         </div>
     </section>
     <script>
