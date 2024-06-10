@@ -958,3 +958,91 @@ background-color: #66fcf1;
     width: 100%;
     height: 100%;
 }
+.summary{
+    padding: 50px 80px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.our-info{
+    display: grid;  
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-content: space-between;
+    border-bottom: 1px solid #2d2f38;
+}   
+.footer .companyLogo img{
+    width: 50px;
+    height: 50px;
+}
+.companyLogo h1{
+    font-size: 1.5rem;
+    color: white;
+}
+.quick-links h2{
+    color: white;
+    font-size: 1.5rem;
+}
+.quick-links ul{
+    list-style: none;
+    margin-top: 40px;
+    padding: 0;
+}
+.quick-links li{
+    font-size: 1.1rem;
+    color: white;
+    margin: 20px 0;
+}
+.quick-links li a{
+    color: white;
+    text-decoration: none;
+}
+.quick-links li i{
+    color: #66fcf1;
+    margin-right: 10px;
+}
+.recent-news h2{
+    color: white;
+    font-size: 1.5rem;
+}
+.recent-news ul{
+    margin-top: 40px;
+    list-style: none;
+    padding: 0;
+}
+.recent-news li{
+    font-size: 1.1rem;
+    color: white;
+    margin: 20px 0;
+}
+.recent-news li a{
+    color: white;
+    text-decoration: none;
+}
+.recent-news li i{
+    font-size: 0.8rem;
+    margin-right: 10px;
+}
+.quickcontact h2{
+    color: white;
+    font-size: 1.5rem;
+}
+.quickcontact ul{
+    list-style: none;
+    padding: 0;
+}
+.quickcontact li{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 35px 0;
+}
+.quickcontact li a{
+    color: white;
+    text-decoration: none;
+}
+.quickcontact li i{
+    margin-right: 10px;
+}
