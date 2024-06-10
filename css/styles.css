@@ -440,3 +440,224 @@ background-color: #66fcf1;
     border-radius: 10px;
     object-fit: cover;
 }
+
+.Services-section {
+    background-color: #0b0c10;
+    padding: 50px 0;
+}
+.Services-section h2 {
+    color: #66fcf1;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0%;
+}
+.Services-section .info {
+    padding: 50px 80px;
+}
+.Services-section .info .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 0px;
+}
+.Services-section .info h1 {
+    margin-top: 5px;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.Services-section .info button {
+    padding: 10px 20px;
+    width: 200px;
+    font: inherit;
+    font-weight: 500;
+}
+.services-carousel {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 30px;
+    position: relative;
+}
+
+.services {
+    width: 440px;
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+}
+
+.services-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.services-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    color: white;
+}
+
+.services-info h2 {
+    color: #66fcf1;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+.services-info h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin: 5px 0 0;
+}
+
+.services-carousel-controls {
+    display: flex;
+    width: 85vw;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    transform: translateY(-250px);
+    padding: 0 100px;
+    z-index: 2;
+}
+
+.services-carousel-controls button {
+    width: 60px;
+    height: 60px;
+    font: inherit;
+    font-weight: 500;
+    background-color: #66fcf1;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.testimonials-section {
+    display: flex;
+    flex-direction: column;;
+    flex-direction: column;
+    padding: 50px 80px;
+}
+.testimonials-section .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testimonials-section .Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+.testimonials-section .Title h1{
+    margin: 0%;
+    font-size: 2.8rem;
+}
+.testimonials-section .Title h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #66fcf1;
+}
+.testimonials-section .give-feedback-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-section .give-feedback-btn button {
+    padding: 10px 20px;
+    width: 200px;
+    font-weight: 600;
+}
+.testimonial-carousel {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #2d2f38;
+    border-radius: 20px;
+    width: 75vw;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 5% 8%;
+}
+.testimonial {
+    min-width: 110%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.4s;
+}
+.testimonial-user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+.testimonial-user-info h1 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.testimonial-user-info h2 {
+    font-size: 1.375rem;
+    margin: 10px 0 0 0;
+}
+.testimonial-Text {
+    padding: 3% 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-left: 1px solid #373737;
+}
+.testimonial-Text p {
+    font-size: 1.7rem;
+    margin: 0;
+}
+.rating {
+    display: flex;
+    gap: 5px;
+}
+.rating i {
+    color: #ffd203;
+}
+.testimonial-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.testimonial-carousel-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    transform: translateY(240px);
+    padding: 0 100px;
+    z-index: 2;
+}
+.testimonial-carousel-controls button {
+    width: 60px;
+    height: 60px;
+    font: inherit;
+    font-weight: 500;
+    background-color: #66fcf1;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
