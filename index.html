@@ -191,7 +191,7 @@
                 </button>
             </div>
         </div>
-        <div class="services-carousel revealFast">
+        <div class="services-carousel revealFast" onmouseenter="ServicesHandleMouseOver()" onmouseleave="ServicesHandleMouseOut()">
             <div class="services">
                 <div class="services-img">
                     <img src="images/VR-1.jpg" alt="VR 1">
@@ -230,8 +230,16 @@
         </div>
         </div>
     <div class="services-carousel-controls">
-        <button id="services-prev">&lt;</button>
-        <button id="services-next">&gt;</button>
+        <button id="services-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(90deg);">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </button>
+        <button id="services-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(-90deg);">
+                <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </button>
     </div>
     </section>
     <section class="testimonials-section">
@@ -244,7 +252,7 @@
             <button class="explorebtn revealFast">Give Feedback</button>
         </div>
         </div>
-        <div class="testimonial-carousel revealSlow">
+        <div class="testimonial-carousel revealSlow" onmouseenter="TestimonialHandleMouseOver()" onmouseleave="TestimonialHandleMouseOut()">
             <div class="testimonial">
                 <div class="testimonial-user-info">
                     <div class="testimonial-img">
@@ -291,8 +299,16 @@
             </div>
         </div>
         <div class="testimonial-carousel-controls">
-            <div><button id="testimonial-prev">&lt;</button></div>
-            <div><button id="testimonial-next">&gt;</button></div>
+            <div><button id="testimonial-prev">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(90deg);">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button></div>
+            <div><button id="testimonial-next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(-90deg);">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button></div>
         </div>
     </section>
     <section class="our-news">
