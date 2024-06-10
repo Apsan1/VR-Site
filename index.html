@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d9d1ddfe3a.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
-    <style>
-    
-    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <script>
-    </script>
+<script>
+    
+</script>
+<style>
+</style>
     <header>
         <nav>
             <div class="companyLogo">
@@ -52,7 +53,7 @@
             </ul>
         </nav>
     </header>
-    <section class="landing-items">
+    <section class="landing-items" onmouseenter="handleMouseOver()" onmouseleave="handleMouseOut()">
         <div class="landing-item">
             <div class="info">
                 <h2 class="reveal-up">Where Reality Ends And</h2>
@@ -65,8 +66,7 @@
                 </div> 
             </div>
             <img class="boy-hero" src="images/hero-img2.png" alt="Landing Image 1">
-        </div>
-    
+        </div> 
         <div class="landing-item">
             <div class="info">
                 <h2 class="reveal-up">Where Reality Ends And</h1>
@@ -80,26 +80,34 @@
             </div>
             <img class="girl-hero" src="images/hero-img.png" alt="Landing Image 2">
         </div>
+        <div class="carousel-controls">
+            <button id="prev" class="smooth-left">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(90deg);">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>                                     
+            </button>
+            <button id="next">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(-90deg);">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>              
+            </button>
+        </div>
+        <div class="radio-buttons">
+            <input type="radio" name="radio" id="radio1" checked>
+            <label for="radio1"></label>
+            
+            <input type="radio" name="radio" id="radio2">
+            <label for="radio2"></label>
+        </div>
     </section>
-    <div class="carousel-controls">
-        <button id="prev">&lt;</button>
-        <button id="next">&gt;</button>
-    </div>
-    <div class="radio-buttons">
-        <input type="radio" name="radio" id="radio1" checked>
-        <label for="radio1"></label>
-        
-        <input type="radio" name="radio" id="radio2">
-        <label for="radio2"></label>
-    </div>
     <section class="whyus-section">
-        <div class="whyus">
+        <div class="whyus revealSlow">
             <h1>Why Choose Us?</h1>
             <p>Lorem is simply dummy text of the printing and typesetting. </p>
             <button class="explorebtn">Explore More</button>
         </div>
         <div class="features-list">
-            <div class="features">
+            <div class="features revealFast">
                 <div class="featuresImg">
                     <img src="images/icons/service-2.png" alt="features 1">
                 </div>
@@ -108,7 +116,7 @@
                     <p>Lorem is simply dummy text of the printing and typesetting industry. </p>
                 </div>  
             </div>
-            <div class="features">
+            <div class="features revealFast">
                 <div class="featuresImg">
                     <img src="images/icons/service-1.png" alt="features 2">
                 </div>
@@ -117,7 +125,7 @@
                     <p>Lorem is simply dummy text of the printing and typesetting industry. </p>
                 </div>
             </div>
-            <div class="features">
+            <div class="features revealFast">
                 <div class="featuresImg">
                     <img src="images/icons/service-3.png" alt="features 3">
                 </div>
@@ -126,7 +134,7 @@
                     <p>Lorem is simply dummy text of the printing and typesetting industry. </p>
                 </div>
             </div>
-            <div class="features">
+            <div class="features revealFast">
                 <div class="featuresImg">
                     <img src="images/icons/service-4.png" alt="features 4">
                 </div>
@@ -138,18 +146,18 @@
         </div>
     </section>
     <section class="Experience-section">
-        <div class="Title">
+        <div class="Title revealFast">
             <h1>Experience a New Dimension of Reality</h1>
         </div>
         <div class="Experience">
         <div class="experience-left">
-            <p>Change the workflow for your WordPress site, control everything from Site editor without using any extra plugins. Improved speed, web vitals score and SEO to get better positions
+            <p class="revealFast">Change the workflow for your WordPress site, control everything from Site editor without using any extra plugins. Improved speed, web vitals score and SEO to get better positions
             </p>
-        <div class="experiences-img">
+        <div class="experiences-img revealSlow">
             <img src="images/exp-1.jpg" alt="Girl with VR Glasses">
             <img src="images/exp-2.jpg" alt="Girl with VR Glasses">
         </div>
-        <div class="stats">
+        <div class="stats revealFast">
         <div class="stats-item">
             <h1>98 <span>%</span></h1>
             <p>Satisfied Clients</p>
@@ -165,7 +173,7 @@
         </div>
         </div>
         <div class="experience-right">
-            <div class="Experience-right-img">
+            <div class="Experience-right-img revealSlow">
                 <img src="images/hero-img.png" alt="Experience Image">
             </div>
         </div>
@@ -173,17 +181,17 @@
     </section>
     <section class="Services-section">     
         <div class="info">
-            <h2>Services</h2>
-            <div class="title">
+            <h2 class="revealFast">Services</h2>
+            <div class="title revealFast">
                 <h1>
                     Discover Our Best VR Services
                 </h1>
-                <button class="explorebtn">
+                <button class="explorebtn revealFast">
                     View All Services
                 </button>
             </div>
         </div>
-        <div class="services-carousel">
+        <div class="services-carousel revealFast">
             <div class="services">
                 <div class="services-img">
                     <img src="images/VR-1.jpg" alt="VR 1">
@@ -229,14 +237,14 @@
     <section class="testimonials-section">
         <div class="heading">
         <div class="Title">
-            <h2>Testimonials</h2>
-            <h1>Trusted By Big Companies</h1>
+            <h2 class="revealFast">Testimonials</h2>
+            <h1 class="revealFast">Trusted By Big Companies</h1>
         </div>
         <div class="give-feedback-btn">
-            <button class="explorebtn">Give Feedback</button>
+            <button class="explorebtn revealFast">Give Feedback</button>
         </div>
         </div>
-        <div class="testimonial-carousel">
+        <div class="testimonial-carousel revealSlow">
             <div class="testimonial">
                 <div class="testimonial-user-info">
                     <div class="testimonial-img">
@@ -290,14 +298,14 @@
     <section class="our-news">
         <div class="heading">
             <div class="Title">
-                <h2>Our News</h2>
-                <h1>Our Latest News and Articles</h1>
+                <h2 class="revealFast">Our News</h2>
+                <h1 class="revealFast">Our Latest News and Articles</h1>
             </div>
-            <div class="explore-news-btn">
+            <div class="explore-news-btn revealFast">
                 <button class="explorebtn">All News</button>
             </div>
         </div>
-        <div class="all-news">
+        <div class="all-news revealSlow">
             <div class="top-news">
                 <div class="image-mask"></div>
                 <div class="image">
@@ -342,12 +350,12 @@
     <section class="pricing-section">
         <div class="heading">
             <div class="Title">
-                <h2>Pricing Table</h2>
-                <h1>Choose Your Product</h1>
+                <h2 class="revealFast">Pricing Table</h2>
+                <h1 class="revealFast">Choose Your Product</h1>
             </div>
         </div>
         <div class="pricing-table">
-            <div class="pricing one">
+            <div class="pricing one revealSlow">
                 <div class="pricing-info">
                     <h2>$9.99 <span>/month</span></h2>
                     <h1>Basic Plan</h1>
@@ -365,7 +373,7 @@
                     <button class="explorebtn">Order Now</button>
                 </div>
             </div>
-            <div class="pricing two">
+            <div class="pricing two revealFast">
                 <div class="pricing-info">
                     <h2>$15.99<span>/month</span></h2>
                     <h1>Regular Plan</h1>
@@ -383,7 +391,7 @@
                     <button class="explorebtn">Order Now</button>
                 </div>
             </div>
-            <div class="pricing three">
+            <div class="pricing three revealFast">
                 <div class="pricing-info">
                     <h2>$27.99<span>/month</span></h2>
                     <h1>Deluxe Plan</h1>
@@ -406,12 +414,12 @@
     <section class="service-for-clients">
         <div class="heading">
             <div class="Title">
-                <h2>Our Services For Clients</h2>
-                <h1>Why Choose Us ?</h1>
+                <h2 class="revealFast">Our Services For Clients</h2>
+                <h1 class="revealFast">Why Choose Us ?</h1>
             </div>
         </div>
         <div class="client-services">
-            <div class="client-service">
+            <div class="client-service revealFast">
                 <div class="client-service-img">
                     <img src="images/icons/service-1.png" alt="Service 2">
                 </div>
@@ -423,7 +431,7 @@
                     <a href="#">View Details</a>
                 </div>                
             </div>
-            <div class="client-service">
+            <div class="client-service revealFast">
                 <div class="client-service-img">
                     <img src="images/icons/service-2.png" alt="Service 1">
                 </div>
@@ -435,7 +443,7 @@
                     <a href="#">View Details</a>
                 </div>
             </div>
-            <div class="client-service">
+            <div class="client-service revealFast">
                 <div class="client-service-img">
                     <img src="images/icons/service-3.png" alt="Service 3">
                 </div>
@@ -447,7 +455,7 @@
                     <a href="#">View Details</a>
                 </div>
             </div>
-            <div class="client-service">
+            <div class="client-service revealSlow">
                 <div class="client-service-img">
                     <img src="images/icons/service-4.png" alt="Service 4">
                 </div>
@@ -459,7 +467,7 @@
                     <a href="#">View Details</a>
                 </div>
             </div>
-            <div class="client-service">
+            <div class="client-service revealSlow">
                 <div class="client-service-img">
                     <img src="images/icons/service-5.png" alt="Service 5">
                 </div>
@@ -471,7 +479,7 @@
                     <a href="#">View Details</a>
                 </div>
             </div>
-            <div class="client-service">
+            <div class="client-service revealSlow">
                 <div class="client-service-img">
                     <img src="images/icons/service-6.png" alt="Service 6">
                 </div>
@@ -484,11 +492,11 @@
                 </div>
             </div>
         </div>
-        <div class="view-all-services">
+        <div class="view-all-services revealFast">
             <button class="explorebtn">View More</button>
         </div>
     </section>
-    <section class="our-clients">
+    <section class="our-clients revealFast">
         <div class="clients">
             <div class="client">
                 <img src="images/clients/client1.png" alt="Client 1">
