@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function () {
 const items = document.querySelectorAll('.landing-item');
 const radio = document.querySelectorAll('.radio-buttons input');
 const radio1 = document.getElementById('radio1');
@@ -30,6 +31,8 @@ radio1.addEventListener('click', () => {
 
 radio2.addEventListener('click', () => {
     changeItem(1);
+});
+
 });
 
 document.addEventListener('DOMContentLoaded', function () {
