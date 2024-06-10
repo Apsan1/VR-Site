@@ -481,6 +481,17 @@ background-color: #66fcf1;
     font-weight: 500;
     margin: 0%;
 }
+.line{
+    width: 40px;
+    height: 3px;
+    background-color: #66fcf1;
+}
+.Topic{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
 .Services-section .info {
     padding: 50px 80px;
 }
@@ -671,16 +682,13 @@ background-color: #66fcf1;
 
 .testimonial-carousel-controls {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    width: 80%;
-    transform: translateY(280px);
-    padding: 0 100px;
-    z-index: 2;
+    position: relative;
 }
-.testimonial-carousel-controls button {
+
+#testimonial-prev {
+    position: relative;
     width: 60px;
     height: 60px;
     font: inherit;
@@ -690,10 +698,25 @@ background-color: #66fcf1;
     border: none;
     cursor: pointer;
     border-radius: 50%;
+    bottom: 220px;
+    transition: transform 0.5s ease; /* Added transition */
 }
-#testimonial-prev, #testimonial-next, #services-prev, #services-next, #prev, #next {
-    display: none;
+
+#testimonial-next {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    font: inherit;
+    font-weight: 500;
+    background-color: #66fcf1;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    bottom: 220px;
+    border-radius: 50%;
+    transition: transform 0.5s ease; /* Added transition */
 }
+
 .our-news{
     background-color: #0b0c10;
     display: flex;

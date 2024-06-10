@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function () {
     prevButton.addEventListener('click', movePrev);
 });
 
-// Testimonial Carousel
 document.addEventListener('DOMContentLoaded', function () {
     const carousel = document.querySelector('.testimonial-carousel');
     const testimonial = document.querySelectorAll('.testimonial');
@@ -79,11 +78,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function moveNext() {
         const firstFeedback = carousel.firstElementChild;
+        //add animation to the first element
+        firstFeedback.style.animation = 'slide-left 1s ease-out';
         carousel.appendChild(firstFeedback);
     }
 
     function movePrev() {
         const lastFeedback = carousel.lastElementChild;
+        //add animation to the last element
+        lastFeedback.style.animation = 'slide-right 1s ease-out';
         carousel.prepend(lastFeedback);
     }
 
@@ -98,58 +101,53 @@ function handleMouseOver() {
     prev.style.display = 'block';
     next.style.display = 'block';
     const carouselControls = document.querySelector('.carousel-controls');
-    carouselControls.style.display = 'flex'; // Show control buttons
-    prev.style.animation = 'slideInLeft 0.5s forwards'; // Slide in from the left
-    next.style.animation = 'slideInRight 0.5s forwards'; // Slide in from the right
+    carouselControls.style.display = 'flex';
+    prev.style.animation = 'slideInLeft 0.5s forwards';
+    next.style.animation = 'slideInRight 0.5s forwards';
 }
 
 function ServicesHandleMouseOver() {
     const prev = document.getElementById('services-prev');
     const next = document.getElementById('services-next');
+
     prev.style.display = 'block';
     next.style.display = 'block';
     const carouselControls = document.querySelector('.services-carousel-controls');
-    carouselControls.style.display = 'flex'; // Show control buttons
-    prev.style.animation = 'slideInLeft 0.5s forwards'; // Slide in from the left
-    next.style.animation = 'slideInRight 0.5s forwards'; // Slide in from the right
+    carouselControls.style.display = 'flex';
+    prev.style.animation = 'slideInLeft 0.5s forwards';
+    next.style.animation = 'slideInRight 0.5s forwards';
 }
 
 function TestimonialHandleMouseOver() {
     const prev = document.getElementById('testimonial-prev');
     const next = document.getElementById('testimonial-next');
+
     prev.style.display = 'block';
     next.style.display = 'block';
-    const carouselControls = document.querySelector('.testimonial-carousel-controls');
-    carouselControls.style.display = 'flex'; // Show control buttons
-    prev.style.animation = 'slideInLeft 0.5s forwards'; // Slide in from the left
-    next.style.animation = 'slideInRight 0.5s forwards'; // Slide in from the right
+    prev.style.animation = 'slideInLeft 0.5s forwards';
+    next.style.animation = 'slideInRight 0.5s forwards';
 }
-
 function ServicesHandleMouseOut() {
     const prev = document.getElementById('services-prev');
     const next = document.getElementById('services-next');
     
     const carouselControls = document.querySelector('.services-carousel-controls');
-    prev.style.animation = 'slideOutLeft 0.5s forwards'; // Slide out to the left
-    next.style.animation = 'slideOutRight 0.5s forwards'; // Slide out to the right
+    prev.style.animation = 'slideOutLeft 0.5s forwards';
+    next.style.animation = 'slideOutRight 0.5s forwards';
     setTimeout(() => {
-      carouselControls.style.display = 'none'; // Hide control buttons after animation
+      carouselControls.style.display = 'none';
     }, 500);
-}
+} 
 
 function TestimonialHandleMouseOut() {
+    console.log('Mouse out');
     const prev = document.getElementById('testimonial-prev');
     const next = document.getElementById('testimonial-next');
     
-    const carouselControls = document.querySelector('.testimonial-carousel-controls');
-    prev.style.animation = 'slideOutLeft 0.5s forwards'; // Slide out to the left
-    next.style.animation = 'slideOutRight 0.5s forwards'; // Slide out to the right
-    setTimeout(() => {
-      carouselControls.style.display = 'none'; // Hide control buttons after animation
-    }, 500);
+    prev.style.animation = 'slideOutLeft 0.5s forwards';
+    next.style.animation = 'slideOutRight 0.5s forwards';
 }
 
-// Function to handle mouseout event
 function handleMouseOut() {
   const prev = document.getElementById('prev');
   const next = document.getElementById('next');
