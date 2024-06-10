@@ -473,6 +473,7 @@ background-color: #66fcf1;
 
 .Services-section {
     background-color: #0b0c10;
+    height: 90vh;
     padding: 50px 0;
 }
 .Services-section h2 {
@@ -566,16 +567,14 @@ background-color: #66fcf1;
 
 .services-carousel-controls {
     display: flex;
-    width: 85vw;
+    padding: 0px 60px;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    transform: translateY(-250px);
-    padding: 0 100px;
-    z-index: 2;
+    position: relative;
 }
 
-.services-carousel-controls button {
+#services-prev {
+    position: relative;
     width: 60px;
     height: 60px;
     font: inherit;
@@ -585,6 +584,23 @@ background-color: #66fcf1;
     border: none;
     cursor: pointer;
     border-radius: 50%;
+    bottom: 220px;
+    transition: transform 0.5s ease; /* Added transition */
+}
+
+#services-next {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    font: inherit;
+    font-weight: 500;
+    background-color: #66fcf1;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    bottom: 220px;
+    border-radius: 50%;
+    transition: transform 0.5s ease; /* Added transition */
 }
 
 .testimonials-section {
