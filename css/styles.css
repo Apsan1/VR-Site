@@ -770,3 +770,106 @@ background-color: #66fcf1;
 .our-news .all-news .other-news .news .news-info p{
     font-size: 1.1rem;
 }
+.pricing-section{
+    background-color: #121212;
+    padding: 50px 80px;
+}
+.pricing-table{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+.pricing-section .heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.pricing-section .heading h1{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0;
+}
+.pricing-section .heading h2{
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #66fcf1;
+    margin: 0 0 20px 0;
+}
+.pricing{
+    width: 30%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 30px;
+    background-color: #0b0c10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pricing-info{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+}
+.pricing-info h2{
+    font-size: 3.7rem;
+    line-height: 0.2;
+    color: #fff;
+    margin: 0;
+}
+.pricing-info h1{
+    font-size: 1.175rem;
+    color: #66fcf1;
+    margin: 0;
+}
+.pricing-info span{
+    margin-top: 20px;
+    display: block;
+    font-size: 0.9rem;
+    color: #d88550;
+    font-style: italic;
+    text-align: center;
+    margin-left: 130px;
+}
+.pricing-info p{
+    margin: 0;
+    font-size: 1.1rem;
+}
+.pricing-features ul{
+    list-style: none;
+    padding: 0 30px;
+    line-height: 2;
+}
+.pricing-features ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.pricing-features ul li i{
+    color: #66fcf1;
+}
+.pricing-table button{
+    width: 100%;
+    transition: all 0.3s;
+}
+.pricing-table .one span{
+    margin-left: 65px;
+}
+.pricing-table .two {
+    padding: 140px 30px;
+    height: 380px;
+    border: 2px solid #66fcf1;
+}
+.pricing-table .two button{
+    background-color: #66fcf1;
+    color: #0b0c10;
+}
+.pricing-table .two button:hover{
+    background-color: #f78550;
+    border: #f78550;
+}
