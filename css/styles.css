@@ -7,6 +7,21 @@ body {
     margin: 0;
     padding: 0;
 }
+h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #66fcf1;
+}
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #fff;
+}
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
 header {
     background-color: #000000;
     color: #fff;
@@ -660,4 +675,98 @@ background-color: #66fcf1;
     border: none;
     cursor: pointer;
     border-radius: 50%;
+}
+.our-news{
+    background-color: #0b0c10;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 50px 0;
+}
+.our-news .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+.our-news .heading .Title h2{
+    margin: 0%;
+}
+.our-news .heading .Title h1{
+    margin: 0%;
+}
+.our-news .heading .explore-news-btn button{
+    font-weight: 600;
+}
+.our-news .all-news{
+    border: #2d2f38 2px solid;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 10px 60px;
+    padding: 30px 30px;
+}
+.our-news .all-news .top-news{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.our-news .all-news .top-news .image{
+    width: 800px;
+    height: 800px;
+}
+.our-news .all-news .top-news .image-mask{
+    position: absolute;
+    width: 54.2%;
+    height: 120%;
+    background-color: #000;
+    opacity: 0.3;
+    border-radius: 20px;
+}
+.our-news .all-news .top-news .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.our-news .all-news .top-news .news-info {
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 42%;
+    width: 40%;
+    padding: 0 60px;
+}        
+.our-news .all-news .top-news .news-info p{
+    font-size: 1.1rem;
+    margin: 0;
+}
+.our-news .all-news .top-news .news-info h2{
+    color: #fff;
+    font-size: 2.375rem;
+    margin: 0;
+}
+.our-news .all-news .other-news{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.our-news .all-news .other-news .news{
+    display: flex;
+    gap: 30px;
+}
+.our-news .all-news .other-news .news .news-img img{
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.our-news .all-news .other-news .news .news-info h2{
+    color: #fff;
+    font-size: 1.06rem;
+}
+.our-news .all-news .other-news .news .news-info p{
+    font-size: 1.1rem;
 }
