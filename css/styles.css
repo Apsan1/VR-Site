@@ -414,12 +414,25 @@ background-color: #66fcf1;
     justify-content: space-between;
     gap: 20px;
 }
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+  }
+
+  .image-container img {
+    transition: transform 2s ease;
+  }
+
+  .image-container:hover img {
+    transform: scale(1.2);
+  }
 
 .Experience-section .experience-left .experiences-img img {
-    width: 50%;
+    width: 100%;
     height: 100%;
-    border-radius: 10px;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .Experience-section .experience-left .stats {
@@ -714,24 +727,37 @@ background-color: #66fcf1;
     flex-direction: column;
     gap: 20px;
 }
-.our-news .all-news .top-news .image{
+.our-news .all-news .top-news .image {
+    position: relative;
     width: 800px;
     height: 800px;
+    overflow: hidden;
+    border-radius: 20px;
 }
-.our-news .all-news .top-news .image-mask{
+
+.our-news .all-news .top-news .image img:hover {
+    transform: scale(1.1);
+}
+
+.our-news .all-news .top-news .image-mask {
     position: absolute;
     width: 54.2%;
     height: 101%;
     background-color: #000;
     opacity: 0.3;
     border-radius: 20px;
+    pointer-events: none;
+    transition: all 1s;
+    z-index: 1;
 }
-.our-news .all-news .top-news .image img{
+
+.our-news .all-news .top-news .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    transition: transform 2s ease;
 }
+
 .our-news .all-news .top-news .news-info {
     z-index: 10;
     position: absolute;
@@ -759,11 +785,21 @@ background-color: #66fcf1;
     display: flex;
     gap: 30px;
 }
-.our-news .all-news .other-news .news .news-img img{
+.our-news .all-news .other-news .news .news-img{
     width: 120px;
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    overflow: hidden;
+}
+.our-news .all-news .other-news .news .news-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+.our-news .all-news .other-news .news .news-img img:hover{
+    transform: scale(1.1);
 }
 .our-news .all-news .other-news .news .news-info h2{
     color: #fff;
