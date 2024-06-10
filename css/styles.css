@@ -548,8 +548,8 @@ background-color: #66fcf1;
 
 .testimonials-section {
     display: flex;
-    flex-direction: column;;
     flex-direction: column;
+    gap: 50px;
     padding: 50px 80px;
 }
 .testimonials-section .heading {
