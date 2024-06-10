@@ -676,7 +676,7 @@ background-color: #66fcf1;
     align-items: center;
     position: absolute;
     width: 80%;
-    transform: translateY(240px);
+    transform: translateY(280px);
     padding: 0 100px;
     z-index: 2;
 }
@@ -690,6 +690,9 @@ background-color: #66fcf1;
     border: none;
     cursor: pointer;
     border-radius: 50%;
+}
+#testimonial-prev, #testimonial-next, #services-prev, #services-next, #prev, #next {
+    display: none;
 }
 .our-news{
     background-color: #0b0c10;
