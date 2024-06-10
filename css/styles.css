@@ -141,15 +141,18 @@ nav ul li ul li a {
         display: block;
     }
 }
-
+section {
+    padding: 50px 80px;
+}
 .landing-items {
+    padding: 70px 20px;
     display: flex;
     overflow: hidden;
     position: relative;
 }
 .landing-item {
     min-width: 100%;
-    height: 90vh;
+    height: 82vh;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
@@ -159,24 +162,19 @@ nav ul li ul li a {
 .landing-item .info {
     max-width: 60%;
 }
-
 .landing-item img {
     top: 0;
     right: 0;
     height: 100%;
     z-index: 0;
 }
-
 .girl-hero {
-    position: relative;
-    z-index: 1;
+    display: none;
+    position: absolute;
     margin-top: 90px;
-    width: 600px;
-    margin-right: 81px;
-    height: 100%;
-    object-fit: contain;
+    margin-right: 40px;
+    object-fit: fill;
 }
-
 .boy-hero{
     position: absolute;
     z-index: 1;
@@ -234,14 +232,13 @@ nav ul li ul li a {
     height: 50px;
     padding: 10px 10px;
     cursor: pointer;
+    box-shadow: 0px 0px 1px 1px #0000001a;
 }
-
 .landing-buttons p {
     font-size: 1.5rem;
     color: rgb(222, 222, 222);
     font-weight: 600;
 }
-
 .carousel-controls {
     position: absolute;
     top: 50%;
@@ -290,6 +287,9 @@ nav ul li ul li a {
     color: #000000;
 }
 .radio-buttons {
+    position: absolute;
+    width: 100%;
+    transform: translateY(-30px);
     display: flex;
     justify-content: center;
     }
@@ -1144,3 +1144,55 @@ footer {
     text-align: center;
     background-color: #0b0c10;
 }
+
+/* animations */
+.pulse {
+    animation: pulse-animation 1.5s infinite;
+  }
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgb(255, 255, 255);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+    }
+  }
+.reveal-up{
+    animation: reveal-up 2s ease-in-out;
+}
+@keyframes reveal-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.slide-right{
+    animation: slide-right 1s ease-out;
+}
+@keyframes slide-right {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slide-left{
+    animation: slide-left 1s ease-out;
+}
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}    
