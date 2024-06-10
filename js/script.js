@@ -11,7 +11,6 @@ let isGirlSlide = false;
 function changeItem(index) {
     currentItem = (index + totalItems) % totalItems;
     items.forEach((item, i) => {
-        console.log(item);
         item.style.display = i === currentItem ? 'flex' : 'none';
         if(isGirlSlide){
             document.getElementsByClassName('girl-hero')[0].style.display = 'none';
