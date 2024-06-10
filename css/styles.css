@@ -245,7 +245,7 @@ section {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
+    background-color: #66fcf1;
 }
 .carousel-controls button {
     background-color: transparent;
@@ -258,21 +258,20 @@ section {
     position: absolute;
     top: 50%;
     width: 50px;
-    transform: translateY(-50%);
     left: 0;
     margin-left: 50px;
-    border: 1px solid #66fcf1;
+    border: 2px solid #66fcf1;
     color: #66fcf1;
     font-size: 1.5rem;
     padding: 10px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 #next {
     position: absolute;
     top: 50%;
     width: 50px;
-    transform: translateY(-50%);
     right: 0;
     margin-right: 50px;
     border: 1px solid #66fcf1;
@@ -280,6 +279,7 @@ section {
     font-size: 1.5rem;
     padding: 10px;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 #prev:hover, #next:hover {
@@ -288,6 +288,7 @@ section {
 }
 .radio-buttons {
     position: absolute;
+    bottom: 10px;
     width: 100%;
     transform: translateY(-30px);
     display: flex;
@@ -1195,4 +1196,81 @@ footer {
         transform: translateX(0);
         opacity: 1;
     }
-}    
+}
+
+@keyframes slideInLeft {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Define the animation for sliding in from the right */
+  @keyframes slideInRight {
+    from {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Define the animation for sliding out to the left */
+  @keyframes slideOutLeft {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+  }
+  
+  /* Define the animation for sliding out to the right */
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+  }
+
+.reveal-up-fast {
+    animation: reveal-up-fast 1s ease-in-out;
+}
+
+@keyframes reveal-up-fast {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.reveal-up-slow {
+    animation: reveal-up-slow 1.5s ease-in-out;
+}
+
+@keyframes reveal-up-slow {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
