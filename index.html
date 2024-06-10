@@ -9,110 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/d9d1ddfe3a.js" crossorigin="anonymous"></script>
     <style>
-        .Services-section {
-            background-color: #0b0c10;
-            padding: 50px 0;
-        }
-        .Services-section h2 {
-            color: #66fcf1;
-            font-size: 1.2rem;
-            font-weight: 500;
-            margin: 0%;
-        }
-        .Services-section .info {
-            padding: 50px 80px;
-        }
-        .Services-section .info .title {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-content: center;
-            padding: 10px 0px;
-        }
-        .Services-section .info h1 {
-            margin-top: 5px;
-            font-size: 2.8rem;
-            font-weight: 600;
-        }
-        .Services-section .info button {
-            padding: 10px 20px;
-            width: 200px;
-            font: inherit;
-            font-weight: 500;
-        }
-        .services-carousel {
-            display: flex;
-            flex-direction: row;
-            padding: 0px 30px;
-            position: relative;
-        }
-        
-        .services {
-            width: 440px;
-            height: 420px;
-            overflow: hidden;
-            position: relative;
-        }
-        
-        .services-img {
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-        
-        .services-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        .services-info {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            bottom: 40px;
-            color: white;
-        }
-        
-        .services-info h2 {
-            color: #66fcf1;
-            font-size: 1rem;
-            font-weight: 500;
-            letter-spacing: 3px;
-            margin: 0;
-        }
-        
-        .services-info h1 {
-            font-size: 1.7rem;
-            font-weight: 600;
-            margin: 5px 0 0;
-        }
-        
-        .services-carousel-controls {
-            display: flex;
-            width: 85vw;
-            justify-content: space-between;
-            align-items: center;
-            position: absolute;
-            transform: translateY(-250px);
-            padding: 0 100px;
-            z-index: 2;
-        }
-        
-        .services-carousel-controls button {
-            width: 60px;
-            height: 60px;
-            font: inherit;
-            font-weight: 500;
-            background-color: #66fcf1;
-            color: #000;
-            border: none;
-            cursor: pointer;
-            border-radius: 50%;
-        }
     </style>
 </head>
 <body>
@@ -326,7 +222,69 @@
         <button id="services-next">&gt;</button>
     </div>
     </section>
+    <section class="testimonials-section">
+        <div class="heading">
+        <div class="Title">
+            <h2>Testimonials</h2>
+            <h1>Trusted By Big Companies</h1>
+        </div>
+        <div class="give-feedback-btn">
+            <button class="explorebtn">Give Feedback</button>
+        </div>
+        </div>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <div class="testimonial-user-info">
+                    <div class="testimonial-img">
+                        <img src="images/JaneDoe.jpg" alt="Testimonial 1">
+                    </div>
+                    <div class="user-name">
+                    <h2>John Doe</h2>
+                    <h1>Founder/ CEO</h1>
+                    </div>
+                </div>
+                <div class="testimonial-Text">
+                    <p>"It was really great working with Mobi team and I am happy I was
+                        introduced to this team! It's not easy to work on a website some one
+                        else I am grateful that Mobi team."
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-user-info">
+                    <div class="testimonial-img">
+                        <img src="images/JaneDoe.jpg" alt="Testimonial 2">
+                    </div>
+                    <div class="user-name">
+                    <h2>Jane Doe</h2>
+                    <h1>Founder/ CEO</h1>
+                    </div>
+                </div>
+                <div class="testimonial-Text">
+                    <p>"It was really great working with Mobi team and I am happy I was
+                        introduced to this team! It's not easy to work on a website some one
+                        else I am grateful that Mobi team."
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-carousel-controls">
+            <div><button id="testimonial-prev">&lt;</button></div>
+            <div><button id="testimonial-next">&gt;</button></div>
+        </div>
+    </section>
     <script>
+        
     </script>
 </body>
 </html>
