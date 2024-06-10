@@ -13,47 +13,46 @@
 </head>
 <body>
 <script>
-    
 </script>
-<style>
-
-</style>
-    <header>
-        <nav>
-            <div class="companyLogo">
-                <img src="images/CompanyLogo.png" alt="Virtual Reality Logo">
-                <h1>Virtual Reality</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us
-                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                    </svg>
-                </a>
-                    <ul>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#" class="loginbutton">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <path fill="" d="M0 0h24v24H0z"/>
-                        <path fill="white" d="M12 11c1.66 0 2.99-1.34 2.99-3S13.66 5 12 5s-3 1.34-3 3 1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V18h14v-1.5c0-2.33-4.67-3.5-7-3.5z"/>
-                      </svg>                                           
-                    Log in</a></li>
-                <li><a href="#">
-                    <i class="fa fa-shopping-bag"></i>                                                          
-                </a></li>
-                <li><button class="getStarted button">Get Started</button></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <div class="companyLogo">
+            <img src="images/CompanyLogo.png" alt="Virtual Reality Logo">
+            <h1>Virtual Reality</h1>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <i class="fa fa-bars"></i>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us
+                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </a>
+                <ul>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#" class="loginbutton">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill="" d="M0 0h24v24H0z"/>
+                    <path fill="white" d="M12 11c1.66 0 2.99-1.34 2.99-3S13.66 5 12 5s-3 1.34-3 3 1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V18h14v-1.5c0-2.33-4.67-3.5-7-3.5z"/>
+                  </svg>                                           
+                Log in</a></li>
+            <li><a href="#">
+                <i class="fa fa-shopping-bag"></i>                                                          
+            </a></li>
+            <li><button class="getStarted button">Get Started</button></li>
+        </ul>
+    </nav>
+</header> 
     <section class="landing-items" onmouseenter="handleMouseOver()" onmouseleave="handleMouseOut()">
         <div class="landing-item">
             <div class="info">
@@ -66,7 +65,9 @@
                     <p class="reveal-up">Watch Intro</p>
                 </div> 
             </div>
-            <img class="boy-hero" src="images/hero-img2.png" alt="Landing Image 1">
+            <div class="boy-hero">
+                <img class="" src="images/hero-img2.png" alt="Landing Image 1">
+            </div>
         </div> 
         <div class="landing-item">
             <div class="info">
@@ -79,7 +80,9 @@
                     <p class="reveal-up"></p>
                 </div>
             </div>
-            <img class="girl-hero" src="images/hero-img.png" alt="Landing Image 2">
+            <div class="girl-hero">
+                <img  src="images/hero-img.png" alt="Landing Image 2">
+            </div>
         </div>
         <div class="carousel-controls">
             <button id="prev" class="smooth-left">

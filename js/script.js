@@ -190,3 +190,9 @@ function revealSlowonScroll(){
 
 window.addEventListener('scroll', revealfastOnScroll);
 window.addEventListener('scroll', revealSlowonScroll);
+
+document.addEventListener('DOMContentLoaded', function () {
+document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('nav-menu').classList.toggle('active');
+});
+} );
