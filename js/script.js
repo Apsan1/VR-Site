@@ -211,6 +211,9 @@ function TestimonialHandleMouseOver() {
         next.style.display = 'block';
         prev.style.animation = 'slideInLeft 0.5s forwards';
         next.style.animation = 'slideInRight 0.5s forwards';
+    } else {
+        prev.style.display = 'none';
+        next.style.display = 'none';
     }
 }
 function ServicesHandleMouseOut() {
@@ -292,3 +295,15 @@ function toggleAboutUs() {
         nav.classList.toggle('visible');
     });
 }
+
+function offButtonsForMobile(){
+    const prev = document.getElementById('services-prev');
+    const next = document.getElementById('services-next');
+    prev.style.display = 'none';
+    next.style.display = 'none';
+}
+document.addEventListener('DOMContentLoaded', function () {
+    if(window.innerWidth < 768){
+        offButtonsForMobile();
+    }
+});
