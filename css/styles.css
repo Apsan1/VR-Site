@@ -124,6 +124,9 @@ nav ul li ul li a {
 .nav-menu.active {
     display: none;
 }
+.sidebar{
+    display: none;
+}
 .companyLogo{
     display: flex;
     flex-direction: row;
@@ -138,6 +141,9 @@ nav ul li ul li a {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 2px;
+    border: none;
+    background-color: transparent;
 }
 
 .hamburger span {
@@ -1449,13 +1455,118 @@ footer {
     .nav-menu li {
         margin: 10px 0;
     }
-    .hamburger {
+    .companyLogo{
+        flex-direction: column;
+    }
+    .sidebar{
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100%;
+        background: #121212;
+        z-index: 1000;
+        transition: 0.5s;
+        flex-direction: column;
+    }
+    .sidebar a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .sidebar.active {
         display: flex;
-        width: 70px;
-        height: 50px;
+        animation: slide-left 0.8s ease;
+    }
+    .sidebar ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        list-style: none;
+    }
+    .sidebar ul li{
+        padding: 10px 20px;
+        border: 0.1px rgb(48, 48, 48) solid;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    .other-navs{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+    .other-navs ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
         justify-content: center;
         align-items: center;
-        background-color: #1d1d1d;
+    }
+    .other-navs a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.2rem;
+    }
+    .other-navs a:hover{
+        color: #66fcf1;
+    }
+    .other-navs button{
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 1px 14px;
+    }
+    .other-navs .loginbutton{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1px;
+    }
+    .other-navs button {
+        background-color: transparent;
+        font: inherit;
+        font-size: 1.1rem;
+        font-weight: 500;
+        width: 150px ;
+        height: 55px;
+        color: #66fcf1;
+        border: 2px solid #66fcf1;
+        cursor: pointer;
+    }
+    .other-navs button:hover {
+        background-color: #66fcf1;
+        color: #000000;
+    }
+    .shownavs {
+        display: none;
+    }
+    .shownavs.visible {
+        display: list-item;
+    }
+    .close{
+        width: 100%;
+        display: flex;
+        padding-top: 20px;
+        padding-right: 30px;
+        justify-content: flex-end;
+    }
+    .close-button{
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .hamburger {
+        display: flex;
+        margin-top: 10px;
+        width: 40px;
+        height: 30px;
+        justify-content: center;
+        align-items: center;
+        border: 0.1px solid #303030;
         cursor: pointer;
         color: #fff;
     }
@@ -1612,6 +1723,19 @@ footer {
     .testimonials-section .Title {
        flex-direction: column;
     }
+    .testimonial{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .testimonial-Text {
+        padding: 3% 8%;
+        border-left: none;
+        border-top: 1px solid #373737;
+    }
+    .testimonial-Text p {
+        font-size: 1.2rem;
+    }
+
     #testimonial-prev {
         bottom: 380px;
     }
