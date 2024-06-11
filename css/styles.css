@@ -1991,7 +1991,11 @@ footer {
     .foot-note {
         padding: 20px 0;
     }
-    #testimonial-prev, #testimonial-next , #service-prev, #service-next {
-        display: none;
+    #services-prev{
+        left: -60px;
     }
+    #services-next{
+        right: -60px;
+    }
+
 }

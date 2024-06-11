@@ -295,15 +295,3 @@ function toggleAboutUs() {
         nav.classList.toggle('visible');
     });
 }
-
-function offButtonsForMobile(){
-    const prev = document.getElementById('services-prev');
-    const next = document.getElementById('services-next');
-    prev.style.display = 'none';
-    next.style.display = 'none';
-}
-document.addEventListener('DOMContentLoaded', function () {
-    if(window.innerWidth < 768){
-        offButtonsForMobile();
-    }
-});
