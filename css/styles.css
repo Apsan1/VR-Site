@@ -90,15 +90,22 @@ nav ul li img {
 }
 nav ul li ul {
     display: none;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    align-items: start;
     position: absolute;
-    background-color: #000000;
+    background-color: #121212;
+    min-width: 200px;
     top: 100%;
     left: 0;
-    min-width: 150px;
     z-index: 1000;
 }
 nav ul li:hover ul {
-    display: block;
+    animation: slide-up 0.5s;
+    display: grid;
+    margin-top: 10px;
 }
 nav ul li ul li {
     margin: 0;
@@ -1301,6 +1308,19 @@ footer {
       box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
     }
   }
+.slide-up{
+    animation: slide-up 1s ease-out;
+}
+@keyframes slide-up {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .reveal-up{
     animation: reveal-up 2s ease-in-out;
 }
