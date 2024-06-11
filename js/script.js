@@ -196,6 +196,17 @@ window.addEventListener('scroll', revealSlowonScroll);
 
 document.addEventListener('DOMContentLoaded', function () {
 document.getElementById('hamburger').addEventListener('click', function() {
-    document.getElementById('nav-menu').classList.toggle('active');
+    document.getElementById('sidebar').classList.toggle('active');
 });
 } );
+
+function closeSidebar(){
+    document.getElementById('sidebar').classList.remove('active');
+}
+
+function toggleAboutUs() {
+    const shownavs = document.querySelectorAll('.shownavs');
+    shownavs.forEach(nav => {
+        nav.classList.toggle('visible');
+    });
+}
