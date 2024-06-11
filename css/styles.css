@@ -358,7 +358,7 @@ background-color: #66fcf1;
 }
 
 .whyus p {
-    font-size: 1.2rem;
+    font-size: 1.19rem;
 }
 
 .whyus button {
@@ -375,19 +375,39 @@ background-color: #66fcf1;
 .features{
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 15px;
     justify-items: center;
-    align-items: center;
 }
 
+.features .featuresInfo h2{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+}
+.features .featuresInfo p{
+    font-size: 1.07rem;
+    font-weight: 500;
+    color: #c5c6c7;
+    margin: 0;
+}
 .features .featuresImg{
+    width: 80px;
+    height: 30px;
+    padding: 10px;
     background-color: #121212;
-    padding: 20px;
 }
 
 .features .featuresImg img{
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.features .featuresInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .Experience-section {
@@ -526,9 +546,12 @@ background-color: #66fcf1;
 }
 .services-carousel {
     display: flex;
+    width: 90%;
     flex-direction: row;
     padding: 0px 30px;
     position: relative;
+    overflow: hidden;
+    transition: transform 1s ease-in;
 }
 
 .services {
@@ -547,7 +570,15 @@ background-color: #66fcf1;
 .services-img img {
     width: 100%;
     height: 100%;
+    vertical-align: middle;
     object-fit: cover;
+    filter: grayscale(100%);
+    transition: transform 0.5s, filter 1s;
+}
+
+.services-img img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
 }
 
 .services-info {
@@ -1235,6 +1266,30 @@ footer {
 }
 
 /* animations */
+.theme-color:hover{
+    color: #66fcf1;
+}
+.underline-animation {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #66fcf1;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.underline-animation:hover::after {
+  width: 100%;
+  visibility: visible;
+}
 .pulse {
     animation: pulse-animation 1.5s infinite;
   }
