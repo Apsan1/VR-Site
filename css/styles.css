@@ -1625,10 +1625,22 @@ footer {
         gap: 20px;
     }
     .boy-hero{
-        display: none;
+        position: absolute;
+        width: 1000px;
+        height: 800px;
+        right: -500px;
+        z-index: -1;
+        pointer-events: none;
     }
     .girl-hero{
-        display: none;
+        display: flex;
+        z-index: 100;
+        position: relative;
+        height: 750px;
+        margin-left: 100px;
+        margin-top: 300px;
+        right: 180px;
+        pointer-events: none;
     }
     #prev {
         margin-left: 0px;
