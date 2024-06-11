@@ -1,660 +1,882 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/CompanyLogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/CompanyLogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Virtual Reality - Apsan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/d9d1ddfe3a.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d9d1ddfe3a.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</head>
-<body>
-<script>
-</script>
-<header>
-    <nav>
+  </head>
+  <body>
+    <script></script>
+    <header>
+      <nav>
         <div class="companyLogo">
-            <img src="images/CompanyLogo.png" alt="Virtual Reality Logo">
-            <h1 class="underline-animation theme-color">Virtual Reality</h1>
+          <img src="images/CompanyLogo.png" alt="Virtual Reality Logo" />
+          <h1 class="underline-animation theme-color">Virtual Reality</h1>
         </div>
         <button class="hamburger" id="hamburger">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="bi bi-list" viewBox="0 0 24 24">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <line x1="4" y1="6" x2="20" y2="6" />
-                <line x1="4" y1="12" x2="20" y2="12" />
-              </svg>           
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="30"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="bi bi-list"
+            viewBox="0 0 24 24"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <line x1="4" y1="6" x2="20" y2="6" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+          </svg>
         </button>
         <ul class="nav-menu" id="nav-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us
-                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg>
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#"
+              >About Us
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="9"
+                fill="white"
+                class="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
             </a>
-                <ul>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#" class="loginbutton">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <path fill="" d="M0 0h24v24H0z"/>
-                    <path fill="white" d="M12 11c1.66 0 2.99-1.34 2.99-3S13.66 5 12 5s-3 1.34-3 3 1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V18h14v-1.5c0-2.33-4.67-3.5-7-3.5z"/>
-                  </svg>                                           
-                Log in</a></li>
-            <li><a href="#">
-                <i class="fa fa-shopping-bag"></i>                                                          
-            </a></li>
-            <li><button class="getStarted button">Get Started</button></li>
+            <ul>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">News</a></li>
+          <li>
+            <a href="#" class="loginbutton">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path fill="" d="M0 0h24v24H0z" />
+                <path
+                  fill="white"
+                  d="M12 11c1.66 0 2.99-1.34 2.99-3S13.66 5 12 5s-3 1.34-3 3 1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V18h14v-1.5c0-2.33-4.67-3.5-7-3.5z"
+                />
+              </svg>
+              Log in</a
+            >
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-shopping-bag"></i>
+            </a>
+          </li>
+          <li><button class="getStarted button">Get Started</button></li>
         </ul>
-
-    </nav>
-</header>
-<div class="sidebar" id="sidebar">
-    <div class="close">
-        <button
-            class="close-button"
-            id="close-button"
-            onclick="closeSidebar()"
-        >
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="bi bi-x" viewBox="0 0 24 24">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      </nav>
+    </header>
+    <div class="sidebar" id="sidebar">
+      <div class="close">
+        <button class="close-button" id="close-button" onclick="closeSidebar()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="bi bi-x"
+            viewBox="0 0 24 24"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <line x1="18" y1="6" x2="6" y2="18" />
             <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>              
-        </button></div>
-<ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#" id="aboutUsNav"
-        onclick="toggleAboutUs()"
-        >About Us
-        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="white" class="bi bi-chevron-down" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-        </svg>
-    </a>    </li>
-    <li class="shownavs"><a href="#">Team</a></li>
-    <li class="shownavs"><a href="#" >Testimonials</a></li>
-    <li class="shownavs"><a href="#" class="shownavs">FAQ</a></li>
-    <li><a href="#">Portfolio</a></li>
-    <li><a href="#">Contact Us</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">News</a></li>
-</ul>
-</div>
-<div  class="other-navs">
-<ul>
-    <li><a href="#" class="loginbutton">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-            <path fill="" d="M0 0h24v24H0z"/>
-            <path fill="white" d="M12 11c1.66 0 2.99-1.34 2.99-3S13.66 5 12 5s-3 1.34-3 3 1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V18h14v-1.5c0-2.33-4.67-3.5-7-3.5z"/>
-          </svg>                                           
-        Log in</a></li>
-    <li><a href="#">
-        <i class="fa fa-shopping-bag"></i>                                                          
-    </a></li>
-    <li><button class="getStarted button">Get Started</button></li>
-</ul> 
-</div>
-    <section class="landing-items" onmouseenter="handleMouseOver()" onmouseleave="handleMouseOut()">
-        <div class="landing-item">
-            <div class="info">
-                <h2 class="reveal-up">Where Reality Ends And</h2>
-                <h1 class="reveal-up">Imagination <br> Begins</h1>
-                <p class="reveal-up">We specialize in providing cutting-edge Virtual Reality solutions that transport you to <br> immersive digital worlds.</p>
-                <div class="landing-buttons">
-                    <button class="explorebtn reveal-up">Explore More</button>
-                    <div class="watch"><button class="playbtn pulse reveal-up"><i class="fa fa-play"></i></button>
-                        <p class="reveal-up">Watch Intro</p>
-                    </div>
-                </div> 
+          </svg>
+        </button>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#" id="aboutUsNav" onclick="toggleAboutUs()"
+            >About Us
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="9"
+              height="9"
+              fill="white"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="shownavs"><a href="#">Team</a></li>
+        <li class="shownavs"><a href="#">Testimonials</a></li>
+        <li class="shownavs"><a href="#" class="shownavs">FAQ</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">News</a></li>
+      </ul>
+    </div>
+    <div class="other-navs">
+      <ul>
+        <li>
+          <a href="#" class="loginbutton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+            >
+              <path fill="" d="M0 0h24v24H0z" />
+              <path
+                fill="white"
+                d="M12 11c1.66 0 2.99-1.34 2.99-3S13.66 5 12 5s-3 1.34-3 3 1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V18h14v-1.5c0-2.33-4.67-3.5-7-3.5z"
+              />
+            </svg>
+            Log in</a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-shopping-bag"></i>
+          </a>
+        </li>
+        <li><button class="getStarted button">Get Started</button></li>
+      </ul>
+    </div>
+    <section
+      class="landing-items"
+      onmouseenter="handleMouseOver()"
+      onmouseleave="handleMouseOut()"
+    >
+      <div class="landing-item">
+        <div class="info">
+          <h2 class="reveal-up">Where Reality Ends And</h2>
+          <h1 class="reveal-up">
+            Imagination <br />
+            Begins
+          </h1>
+          <p class="reveal-up">
+            We specialize in providing cutting-edge Virtual Reality solutions
+            that transport you to <br />
+            immersive digital worlds.
+          </p>
+          <div class="landing-buttons">
+            <button class="explorebtn reveal-up">Explore More</button>
+            <div class="watch">
+              <button class="playbtn pulse reveal-up">
+                <i class="fa fa-play"></i>
+              </button>
+              <p class="reveal-up">Watch Intro</p>
             </div>
-            <div class="boy-hero">
-                <img class="" src="images/hero-img2.png" alt="Landing Image 1">
-            </div>
-        </div> 
-        <div class="landing-item">
-            <div class="info">
-                <h2 class="reveal-up">Where Reality Ends And</h1>
-                <h1 class="reveal-up">Imagination <br> Begins</h1>
-                <p class="reveal-up">We specialize in providing cutting-edge Virtual Reality solutions that transport you to <br> immersive digital worlds.</p>
-                <div class="landing-buttons">
-                    <button class="explorebtn reveal-up">Explore More</button>
-                    <button class="playbtn pulse reveal-up"><i class="fa fa-play"></i></button>
-                    <p class="reveal-up"></p>
-                </div>
-            </div>
-            <div class="girl-hero">
-                <img  src="images/hero-img.png" alt="Landing Image 2">
-            </div>
+          </div>
         </div>
-        <div class="carousel-controls">
-            <button id="prev" class="smooth-left">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(90deg);">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg>                                     
+        <div class="boy-hero">
+          <img class="" src="images/hero-img2.png" alt="Landing Image 1" />
+        </div>
+      </div>
+      <div class="landing-item">
+        <div class="info">
+          <h2 class="reveal-up">Where Reality Ends And</h2>
+          <h1 class="reveal-up">
+            Imagination <br />
+            Begins
+          </h1>
+          <p class="reveal-up">
+            We specialize in providing cutting-edge Virtual Reality solutions
+            that transport you to <br />
+            immersive digital worlds.
+          </p>
+          <div class="landing-buttons">
+            <button class="explorebtn reveal-up">Explore More</button>
+            <button class="playbtn pulse reveal-up">
+              <i class="fa fa-play"></i>
             </button>
-            <button id="next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(-90deg);">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                  </svg>              
-            </button>
+            <p class="reveal-up"></p>
+          </div>
         </div>
-        <div class="radio-buttons">
-            <input type="radio" name="radio" id="radio1" checked>
-            <label for="radio1"></label>
-            
-            <input type="radio" name="radio" id="radio2">
-            <label for="radio2"></label>
+        <div class="girl-hero">
+          <img src="images/hero-img.png" alt="Landing Image 2" />
         </div>
+      </div>
+      <div class="carousel-controls">
+        <button id="prev" class="smooth-left">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-chevron-right"
+            viewBox="0 0 16 16"
+            style="transform: rotate(90deg)"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+        <button id="next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-chevron-right"
+            viewBox="0 0 16 16"
+            style="transform: rotate(-90deg)"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="radio-buttons">
+        <input type="radio" name="radio" id="radio1" checked />
+        <label for="radio1"></label>
+
+        <input type="radio" name="radio" id="radio2" />
+        <label for="radio2"></label>
+      </div>
     </section>
     <section class="whyus-section">
-        <div class="whyus revealSlow">
-            <h1>Why Choose Us?</h1>
-            <p>Lorem is simply dummy text of the printing and typesetting. </p>
-            <button class="explorebtn">Explore More</button>
+      <div class="whyus revealSlow">
+        <h1>Why Choose Us?</h1>
+        <p>Lorem is simply dummy text of the printing and typesetting.</p>
+        <button class="explorebtn">Explore More</button>
+      </div>
+      <div class="features-list">
+        <div class="features revealFast">
+          <div class="featuresImg">
+            <img src="images/icons/service-2.png" alt="features 1" />
+          </div>
+          <div class="featuresInfo">
+            <h2 class="underline-animation theme-color">Modern Technology</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
         </div>
-        <div class="features-list">
-            <div class="features revealFast">
-                <div class="featuresImg">
-                    <img src="images/icons/service-2.png" alt="features 1">
-                </div>
-                <div class="featuresInfo">
-                    <h2 class="underline-animation theme-color">Modern Technology</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry. </p>
-                </div>  
-            </div>
-            <div class="features revealFast">
-                <div class="featuresImg">
-                    <img src="images/icons/service-1.png" alt="features 2">
-                </div>
-                <div class="featuresInfo">
-                    <h2>Digital Strategy</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry. </p>
-                </div>
-            </div>
-            <div class="features revealFast">
-                <div class="featuresImg">
-                    <img src="images/icons/service-3.png" alt="features 3">
-                </div>
-                <div class="featuresInfo">
-                    <h2>Scalability</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry. </p>
-                </div>
-            </div>
-            <div class="features revealFast">
-                <div class="featuresImg">
-                    <img src="images/icons/service-4.png" alt="features 4">
-                </div>
-                <div class="featuresInfo">
-                    <h2>Versatile Applications</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry. </p>
-                </div>
-            </div>
+        <div class="features revealFast">
+          <div class="featuresImg">
+            <img src="images/icons/service-1.png" alt="features 2" />
+          </div>
+          <div class="featuresInfo">
+            <h2>Digital Strategy</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
         </div>
+        <div class="features revealFast">
+          <div class="featuresImg">
+            <img src="images/icons/service-3.png" alt="features 3" />
+          </div>
+          <div class="featuresInfo">
+            <h2>Scalability</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+        <div class="features revealFast">
+          <div class="featuresImg">
+            <img src="images/icons/service-4.png" alt="features 4" />
+          </div>
+          <div class="featuresInfo">
+            <h2>Versatile Applications</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="Experience-section">
-        <div class="Title revealFast">
-            <h1>Experience a New Dimension of Reality</h1>
-        </div>
-        <div class="Experience">
+      <div class="Title revealFast">
+        <h1>Experience a New Dimension of Reality</h1>
+      </div>
+      <div class="Experience">
         <div class="experience-left">
-            <p class="revealFast">Change the workflow for your WordPress site, control everything from Site editor without using any extra plugins. Improved speed, web vitals score and SEO to get better positions
-            </p>
-        <div class="experiences-img revealSlow">
-            <div class="image-container"><img src="images/exp-1.jpg" alt="Girl with VR Glasses"></div>
-            <div class="image-container"><img src="images/exp-2.jpg" alt="Girl with VR Glasses"></div>
-        </div>
-        <div class="stats revealFast">
-        <div class="stats-item">
-            <h1>98 <span>%</span></h1>
-            <p>Satisfied Clients</p>
-        </div>
-        <div class="stats-item">
-            <h1>99 <span>+</span></h1>
-            <p>Popular Features</p>
-        </div>
-        <div class="stats-item">
-            <h1>10<span>M</span></h1>
-            <p>Clients Worldwide</p>
-        </div>
-        </div>
+          <p class="revealFast">
+            Change the workflow for your WordPress site, control everything from
+            Site editor without using any extra plugins. Improved speed, web
+            vitals score and SEO to get better positions
+          </p>
+          <div class="experiences-img revealSlow">
+            <div class="image-container">
+              <img src="images/exp-1.jpg" alt="Girl with VR Glasses" />
+            </div>
+            <div class="image-container">
+              <img src="images/exp-2.jpg" alt="Girl with VR Glasses" />
+            </div>
+          </div>
+          <div class="stats revealFast">
+            <div class="stats-item">
+              <h1>98 <span>%</span></h1>
+              <p>Satisfied Clients</p>
+            </div>
+            <div class="stats-item">
+              <h1>99 <span>+</span></h1>
+              <p>Popular Features</p>
+            </div>
+            <div class="stats-item">
+              <h1>10<span>M</span></h1>
+              <p>Clients Worldwide</p>
+            </div>
+          </div>
         </div>
         <div class="experience-right">
-            <div class="Experience-right-img revealSlow">
-                <img src="images/hero-img.png" alt="Experience Image">
-            </div>
+          <div class="Experience-right-img revealSlow">
+            <img src="images/hero-img.png" alt="Experience Image" />
+          </div>
         </div>
-    </div>
+      </div>
     </section>
-    <section class="Services-section">     
-        <div class="info">
-            <div class="Topic revealFast">
-                <div class="line"></div>
-                <h2 class="revealFast">Services</h2>
-            </div>
-            <div class="title revealFast">
-                <h1>
-                    Discover Our Best VR Services
-                </h1>
-                <button class="explorebtn revealFast">
-                    View All Services
-                </button>
-            </div>
+    <section class="Services-section">
+      <div class="info">
+        <div class="Topic revealFast">
+          <div class="line"></div>
+          <h2 class="revealFast">Services</h2>
         </div>
-    <div class="services-carousel-wrapper" onmouseenter="ServicesHandleMouseOver()" onmouseleave="ServicesHandleMouseOut()">
+        <div class="title revealFast">
+          <h1>Discover Our Best VR Services</h1>
+          <button class="explorebtn revealFast">View All Services</button>
+        </div>
+      </div>
+      <div
+        class="services-carousel-wrapper"
+        onmouseenter="ServicesHandleMouseOver()"
+        onmouseleave="ServicesHandleMouseOut()"
+      >
         <div class="services-carousel revealFast">
-            <div class="services">
-                <div class="services-img">
-                    <img src="images/VR-1.jpg" alt="VR 1">
-                </div>
-                <div class="services-info">
-                    <h2>Service</h2>
-                    <h1 class="underline-animation theme-color">Marketing VR</h1>
-                </div>
+          <div class="services">
+            <div class="services-img">
+              <img src="images/VR-1.jpg" alt="VR 1" />
             </div>
-            <div class="services">
-                    <div class="services-img">
-                        <img src="images/VR-2.jpg" alt="VR 2">
-                    </div>
-                    <div class="services-info">
-                        <h2>Service</h2>
-                        <h1 class="underline-animation theme-color">Game VR</h1>
-                    </div>
+            <div class="services-info">
+              <h2>Service</h2>
+              <h1 class="underline-animation theme-color">Marketing VR</h1>
             </div>
-            <div class="services">
-                <div class="services-img">
-                    <img src="images/VR-3.jpg" alt="VR 3">
-                </div>
-                <div class="services-info">
-                    <h2>Service</h2>
-                    <h1 class="underline-animation theme-color">Commercial VR</h1>
-                </div>
+          </div>
+          <div class="services">
+            <div class="services-img">
+              <img src="images/VR-2.jpg" alt="VR 2" />
             </div>
-            <div class="services">
-                <div class="services-img">
-                    <img src="images/VR-4.jpg" alt="VR 4">
-                </div>
-                <div class="services-info">
-                    <h2>Service</h2>
-                    <h1 class="underline-animation theme-color">Product VR</h1>
-                </div>
+            <div class="services-info">
+              <h2>Service</h2>
+              <h1 class="underline-animation theme-color">Game VR</h1>
             </div>
+          </div>
+          <div class="services">
+            <div class="services-img">
+              <img src="images/VR-3.jpg" alt="VR 3" />
+            </div>
+            <div class="services-info">
+              <h2>Service</h2>
+              <h1 class="underline-animation theme-color">Commercial VR</h1>
+            </div>
+          </div>
+          <div class="services">
+            <div class="services-img">
+              <img src="images/VR-4.jpg" alt="VR 4" />
+            </div>
+            <div class="services-info">
+              <h2>Service</h2>
+              <h1 class="underline-animation theme-color">Product VR</h1>
+            </div>
+          </div>
         </div>
         <div class="services-carousel-controls">
-            <button id="services-prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(90deg);">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button>
-            <button id="services-next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(-90deg);">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button>
+          <button id="services-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+              style="transform: rotate(90deg)"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
+          <button id="services-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="currentColor"
+              class="bi bi-chevron-right"
+              viewBox="0 0 16 16"
+              style="transform: rotate(-90deg)"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </button>
         </div>
-    </div>
+      </div>
     </section>
     <section class="testimonials-section">
-        <div class="heading">
+      <div class="heading">
         <div class="Title">
-            <div class="Topic revealFast">
+          <div class="Topic revealFast">
             <div class="line"></div>
             <h2 class="revealFast">Testimonials</h2>
-            </div>
-            <h1 class="revealFast">Trusted By Big Companies</h1>
+          </div>
+          <h1 class="revealFast">Trusted By Big Companies</h1>
         </div>
         <div class="give-feedback-btn">
-            <button class="explorebtn revealFast">Give Feedback</button>
+          <button class="explorebtn revealFast">Give Feedback</button>
         </div>
-        </div>
-        <div class="testimonials-show" onmouseenter="TestimonialHandleMouseOver()" onmouseleave="TestimonialHandleMouseOut()">
-        <div class="testimonial-carousel revealSlow" >
-            <div class="testimonial">
-                <div class="testimonial-user-info">
-                    <div class="testimonial-img">
-                        <img src="images/JaneDoe.jpg" alt="Testimonial 1">
-                    </div>
-                    <div class="user-name">
-                    <h2>John Doe</h2>
-                    <h1>Founder/ CEO</h1>
-                    </div>
-                </div>
-                <div class="testimonial-Text">
-                    <p>"It was really great working with Mobi team and I am happy I was
-                        introduced to this team! It's not easy to work on a website some one
-                        else I am grateful that Mobi team."
-                    </p>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                </div>
+      </div>
+      <div
+        class="testimonials-show"
+        onmouseenter="TestimonialHandleMouseOver()"
+        onmouseleave="TestimonialHandleMouseOut()"
+      >
+        <div class="testimonial-carousel revealSlow">
+          <div class="testimonial">
+            <div class="testimonial-user-info">
+              <div class="testimonial-img">
+                <img src="images/JaneDoe.jpg" alt="Testimonial 1" />
+              </div>
+              <div class="user-name">
+                <h2>John Doe</h2>
+                <h1>Founder/ CEO</h1>
+              </div>
             </div>
+            <div class="testimonial-Text">
+              <p>
+                "It was really great working with Mobi team and I am happy I was
+                introduced to this team! It's not easy to work on a website some
+                one else I am grateful that Mobi team."
+              </p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="testimonial-carousel-controls">
-            <div class="prev-btn"><button id="testimonial-prev">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(90deg);">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button></div>
-            <div class="next-btn"><button id="testimonial-next">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16" style="transform: rotate(-90deg);">
-                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button></div>
+          <div class="prev-btn">
+            <button id="testimonial-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+                style="transform: rotate(90deg)"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="next-btn">
+            <button id="testimonial-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="currentColor"
+                class="bi bi-chevron-right"
+                viewBox="0 0 16 16"
+                style="transform: rotate(-90deg)"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        </div>
+      </div>
     </section>
     <section class="our-news">
-        <div class="heading">
-            <div class="Title">
-                <div class="Topic revealFast">
-                    <div class="line"></div>
-                    <h2 class="revealFast">Our News</h2>
-                </div>
-                <h1 class="revealFast">Our Latest News and Articles</h1>
-            </div>
-            <div class="explore-news-btn revealFast">
-                <button class="explorebtn">All News</button>
-            </div>
+      <div class="heading">
+        <div class="Title">
+          <div class="Topic revealFast">
+            <div class="line"></div>
+            <h2 class="revealFast">Our News</h2>
+          </div>
+          <h1 class="revealFast">Our Latest News and Articles</h1>
         </div>
-        <div class="all-news revealSlow">
-            <div class="top-news">
-                <div class="image">
-                    <img src="images/news/news-left.jpeg" alt="News Trending">
-                </div>
-                <div class="news-info">
-                    <p>October 21, 2022</p>
-                    <h2 class="underline-animation-white">Latest Fashion Trends in This summer</h2>
-                </div>
-            </div>
-            <div class="other-news">
-                <div class="news">
-                    <div class="news-img">
-                        <img src="images/news/news-1.jpeg" alt="News 1">
-                    </div>
-                    <div class="news-info">
-                        <h2 class="underline-animation">Latest Fashion Trends in This summer</h2>
-                        <p><i class="fa fa-clock"></i> October 21, 2022</p>
-                    </div>
-                </div>
-                <div class="news">
-                    <div class="news-img">
-                        <img src="images/news/news-2.jpeg" alt="News 2">
-                    </div>
-                    <div class="news-info">
-                        <h2 class="underline-animation theme-color">Highlights New York Fashion Week 2022</h2>
-                        <p><i class="fa fa-clock"></i> October 21, 2022</p>
-                    </div>
-                </div>
-                <div class="news">
-                    <div class="news-img">
-                        <img src="images/news/news-3.jpeg" alt="News 3">
-                    </div>
-                    <div class="news-info">
-                        <h2 class="underline-animation theme-color">The best apps to your next trip</h2>
-                        <p><i class="fa fa-clock"></i> October 21, 2022</p>
-                    </div>
-                </div>
-            </div>
+        <div class="explore-news-btn revealFast">
+          <button class="explorebtn">All News</button>
         </div>
+      </div>
+      <div class="all-news revealSlow">
+        <div class="top-news">
+          <div class="image">
+            <img src="images/news/news-left.jpeg" alt="News Trending" />
+          </div>
+          <div class="news-info">
+            <p>October 21, 2022</p>
+            <h2 class="underline-animation-white">
+              Latest Fashion Trends in This summer
+            </h2>
+          </div>
+        </div>
+        <div class="other-news">
+          <div class="news">
+            <div class="news-img">
+              <img src="images/news/news-1.jpeg" alt="News 1" />
+            </div>
+            <div class="news-info">
+              <h2 class="underline-animation">
+                Latest Fashion Trends in This summer
+              </h2>
+              <p><i class="fa fa-clock"></i> October 21, 2022</p>
+            </div>
+          </div>
+          <div class="news">
+            <div class="news-img">
+              <img src="images/news/news-2.jpeg" alt="News 2" />
+            </div>
+            <div class="news-info">
+              <h2 class="underline-animation theme-color">
+                Highlights New York Fashion Week 2022
+              </h2>
+              <p><i class="fa fa-clock"></i> October 21, 2022</p>
+            </div>
+          </div>
+          <div class="news">
+            <div class="news-img">
+              <img src="images/news/news-3.jpeg" alt="News 3" />
+            </div>
+            <div class="news-info">
+              <h2 class="underline-animation theme-color">
+                The best apps to your next trip
+              </h2>
+              <p><i class="fa fa-clock"></i> October 21, 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="pricing-section">
-        <div class="heading">
-            <div class="Title">
-                <h2 class="revealFast">Pricing Table</h2>
-                <h1 class="revealFast">Choose Your Product</h1>
-            </div>
+      <div class="heading">
+        <div class="Title">
+          <h2 class="revealFast">Pricing Table</h2>
+          <h1 class="revealFast">Choose Your Product</h1>
         </div>
-        <div class="pricing-table">
-            <div class="pricing one revealSlow">
-                <div class="pricing-info">
-                    <h2>$9.99 <span>/month</span></h2>
-                    <h1>Basic Plan</h1>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry</p>
-                </div>
-                <div class="pricing-features">
-                    <ul>
-                        <li><i class="fa fa-check"></i> Consultation</li>
-                        <li><i class="fa fa-check"></i> Project Planning</li>
-                        <li><i class="fa fa-check"></i>Project Render</li>
-                        <li><i class="fa fa-check"></i>24 / 7 Support</li>
-                    </ul>
-                </div>
-                <div>
-                    <button class="explorebtn">Order Now</button>
-                </div>
-            </div>
-            <div class="pricing two revealFast">
-                <div class="pricing-info">
-                    <h2>$15.99<span>/month</span></h2>
-                    <h1>Regular Plan</h1>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry</p>
-                </div>
-                <div class="pricing-features">
-                    <ul>
-                        <li><i class="fa fa-check"></i>Consultation</li>
-                        <li><i class="fa fa-check"></i>Project Planning</li>
-                        <li><i class="fa fa-check"></i>Project Render</li>
-                        <li><i class="fa fa-check"></i>24 / 7 Support</li>
-                    </ul>
-                </div>
-                <div>
-                    <button class="explorebtn">Order Now</button>
-                </div>
-            </div>
-            <div class="pricing three revealFast">
-                <div class="pricing-info">
-                    <h2>$27.99<span>/month</span></h2>
-                    <h1>Deluxe Plan</h1>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry</p>
-                </div>
-                <div class="pricing-features">
-                    <ul>
-                        <li><i class="fa fa-check"></i>Consultation</li>
-                        <li><i class="fa fa-check"></i>Project Planning</li>
-                        <li><i class="fa fa-check"></i>Project Render</li>
-                        <li><i class="fa fa-check"></i>24 / 7 Support</li>
-                    </ul>
-                </div>
-                <div>
-                    <button class="explorebtn">Order Now</button>
-                </div>
-            </div>
+      </div>
+      <div class="pricing-table">
+        <div class="pricing one revealSlow">
+          <div class="pricing-info">
+            <h2>$9.99 <span>/month</span></h2>
+            <h1>Basic Plan</h1>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry
+            </p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fa fa-check"></i> Consultation</li>
+              <li><i class="fa fa-check"></i> Project Planning</li>
+              <li><i class="fa fa-check"></i>Project Render</li>
+              <li><i class="fa fa-check"></i>24 / 7 Support</li>
+            </ul>
+          </div>
+          <div>
+            <button class="explorebtn">Order Now</button>
+          </div>
         </div>
+        <div class="pricing two revealFast">
+          <div class="pricing-info">
+            <h2>$15.99<span>/month</span></h2>
+            <h1>Regular Plan</h1>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry
+            </p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fa fa-check"></i>Consultation</li>
+              <li><i class="fa fa-check"></i>Project Planning</li>
+              <li><i class="fa fa-check"></i>Project Render</li>
+              <li><i class="fa fa-check"></i>24 / 7 Support</li>
+            </ul>
+          </div>
+          <div>
+            <button class="explorebtn">Order Now</button>
+          </div>
+        </div>
+        <div class="pricing three revealFast">
+          <div class="pricing-info">
+            <h2>$27.99<span>/month</span></h2>
+            <h1>Deluxe Plan</h1>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry
+            </p>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i class="fa fa-check"></i>Consultation</li>
+              <li><i class="fa fa-check"></i>Project Planning</li>
+              <li><i class="fa fa-check"></i>Project Render</li>
+              <li><i class="fa fa-check"></i>24 / 7 Support</li>
+            </ul>
+          </div>
+          <div>
+            <button class="explorebtn">Order Now</button>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="service-for-clients">
-        <div class="heading">
-            <div class="Title">
-                <div class="Topic revealFast">
-                    <div class="line"></div>
-                    <h2 class="">Our Services For Clients</h2>
-                </div>
-                <h1 class="revealFast">Why Choose Us ?</h1>
-            </div>
+      <div class="heading">
+        <div class="Title">
+          <div class="Topic revealFast">
+            <div class="line"></div>
+            <h2 class="">Our Services For Clients</h2>
+          </div>
+          <h1 class="revealFast">Why Choose Us ?</h1>
         </div>
-        <div class="client-services">
-            <div class="client-service revealFast">
-                <div class="client-service-img">
-                    <img src="images/icons/service-1.png" alt="Service 2">
-                </div>
-                <div class="client-service-info">
-                    <h2>Digital Strategy</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="view-details">
-                    <a href="#">View Details</a>
-                </div>                
-            </div>
-            <div class="client-service revealFast">
-                <div class="client-service-img">
-                    <img src="images/icons/service-2.png" alt="Service 1">
-                </div>
-                <div class="client-service-info">
-                    <h2>Modern Technology</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="view-details">
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="client-service revealFast">
-                <div class="client-service-img">
-                    <img src="images/icons/service-3.png" alt="Service 3">
-                </div>
-                <div class="client-service-info">
-                    <h2>Scalability</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="view-details">
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="client-service revealSlow">
-                <div class="client-service-img">
-                    <img src="images/icons/service-4.png" alt="Service 4">
-                </div>
-                <div class="client-service-info">
-                    <h2>Versatile Applications</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="view-details">
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="client-service revealSlow">
-                <div class="client-service-img">
-                    <img src="images/icons/service-5.png" alt="Service 5">
-                </div>
-                <div class="client-service-info">
-                    <h2>Cost Effective</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="view-details">
-                    <a href="#">View Details</a>
-                </div>
-            </div>
-            <div class="client-service revealSlow">
-                <div class="client-service-img">
-                    <img src="images/icons/service-6.png" alt="Service 6">
-                </div>
-                <div class="client-service-info">
-                    <h2>Diverse Approach</h2>
-                    <p>Lorem is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-                <div class="view-details">
-                    <a href="#">View Details</a>
-                </div>
-            </div>
+      </div>
+      <div class="client-services">
+        <div class="client-service revealFast">
+          <div class="client-service-img">
+            <img src="images/icons/service-1.png" alt="Service 2" />
+          </div>
+          <div class="client-service-info">
+            <h2>Digital Strategy</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="view-details">
+            <a href="#">View Details</a>
+          </div>
         </div>
-        <div class="view-all-services revealFast">
-            <button class="explorebtn">View More</button>
+        <div class="client-service revealFast">
+          <div class="client-service-img">
+            <img src="images/icons/service-2.png" alt="Service 1" />
+          </div>
+          <div class="client-service-info">
+            <h2>Modern Technology</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="view-details">
+            <a href="#">View Details</a>
+          </div>
         </div>
+        <div class="client-service revealFast">
+          <div class="client-service-img">
+            <img src="images/icons/service-3.png" alt="Service 3" />
+          </div>
+          <div class="client-service-info">
+            <h2>Scalability</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="view-details">
+            <a href="#">View Details</a>
+          </div>
+        </div>
+        <div class="client-service revealSlow">
+          <div class="client-service-img">
+            <img src="images/icons/service-4.png" alt="Service 4" />
+          </div>
+          <div class="client-service-info">
+            <h2>Versatile Applications</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="view-details">
+            <a href="#">View Details</a>
+          </div>
+        </div>
+        <div class="client-service revealSlow">
+          <div class="client-service-img">
+            <img src="images/icons/service-5.png" alt="Service 5" />
+          </div>
+          <div class="client-service-info">
+            <h2>Cost Effective</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="view-details">
+            <a href="#">View Details</a>
+          </div>
+        </div>
+        <div class="client-service revealSlow">
+          <div class="client-service-img">
+            <img src="images/icons/service-6.png" alt="Service 6" />
+          </div>
+          <div class="client-service-info">
+            <h2>Diverse Approach</h2>
+            <p>
+              Lorem is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="view-details">
+            <a href="#">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="view-all-services revealFast">
+        <button class="explorebtn">View More</button>
+      </div>
     </section>
     <section class="our-clients revealFast">
-        <div class="clients">
-            <div class="client">
-                <img src="images/clients/client1.png" alt="Client 1">
-            </div>
-            <div class="client">
-                <img src="images/clients/client2.png" alt="Client 2">
-            </div>
-            <div class="client">
-                <img src="images/clients/client3.png" alt="Client 3">
-            </div>
-            <div class="client">
-                <img src="images/clients/client4.png" alt="Client 4">
-            </div>
-            <div class="client">
-                <img src="images/clients/client5.png" alt="Client 5">
-            </div>
+      <div class="clients">
+        <div class="client">
+          <img src="images/clients/client1.png" alt="Client 1" />
         </div>
+        <div class="client">
+          <img src="images/clients/client2.png" alt="Client 2" />
+        </div>
+        <div class="client">
+          <img src="images/clients/client3.png" alt="Client 3" />
+        </div>
+        <div class="client">
+          <img src="images/clients/client4.png" alt="Client 4" />
+        </div>
+        <div class="client">
+          <img src="images/clients/client5.png" alt="Client 5" />
+        </div>
+      </div>
     </section>
     <section class="summary">
-    <div class="footer">
+      <div class="footer">
         <div class="our-info">
-            <div class="info">
-                <div class="companyLogo">
-                    <img src="images/CompanyLogo.png" alt="Company Logo">
-                    <h1>Virtual Reality</h1>
-                </div>
-                <p>Nsectetur adipisicing elit, sed do
-                   eiusmod tempor incididunt ut labore 
-                   et dolore magna aliqua. Ut enim ad 
-                   minim veniam</p>
+          <div class="info">
+            <div class="companyLogo">
+              <img src="images/CompanyLogo.png" alt="Company Logo" />
+              <h1>Virtual Reality</h1>
             </div>
-            <div class="quick-links">
-                <h2>Quick links</h2>
-                <ul>
-                    <li><i class="fa fa-check"></i><a href="#">Our Services</a></li>
-                    <li><i class="fa fa-check"></i><a href="#">Our Portfolio</a></li>
-                    <li><i class="fa fa-check"></i><a href="#">Contact </a></li>
-                    <li><i class="fa fa-check"></i><a href="#">News</a></li>
-                </ul>
-            </div>
-            <div class = "recent-news">
-                <h2>Recent News</h2>
-                <ul>
-                    <li><i class="fa fa-clock"></i><a href="#"> Blocks (2) </a></li>
-                    <li><i class="fa fa-clock"></i><a href="#"> ESE (2) </a></li>
-                    <li><i class="fa fa-clock"></i><a href="#"> Gutenify (2) </a></li>
-                </ul>
-            </div>
-            <div class="quickcontact">
-                <h2>Quick Contact</h2>
-                <ul>
-                    <li>New South Wales, Australia</li>
-                    <li>example@example.com</li>
-                    <li>123 3456679 </li>
-                    <li>10 AM – 5 PM </li>
-
-                </ul>
-            </div>
+            <p>
+              Nsectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+          </div>
+          <div class="quick-links">
+            <h2>Quick links</h2>
+            <ul>
+              <li><i class="fa fa-check"></i><a href="#">Our Services</a></li>
+              <li><i class="fa fa-check"></i><a href="#">Our Portfolio</a></li>
+              <li><i class="fa fa-check"></i><a href="#">Contact </a></li>
+              <li><i class="fa fa-check"></i><a href="#">News</a></li>
+            </ul>
+          </div>
+          <div class="recent-news">
+            <h2>Recent News</h2>
+            <ul>
+              <li><i class="fa fa-clock"></i><a href="#"> Blocks (2) </a></li>
+              <li><i class="fa fa-clock"></i><a href="#"> ESE (2) </a></li>
+              <li><i class="fa fa-clock"></i><a href="#"> Gutenify (2) </a></li>
+            </ul>
+          </div>
+          <div class="quickcontact">
+            <h2>Quick Contact</h2>
+            <ul>
+              <li>New South Wales, Australia</li>
+              <li>example@example.com</li>
+              <li>123 3456679</li>
+              <li>10 AM 5 PM</li>
+            </ul>
+          </div>
         </div>
         <div class="extra-info">
-            <div class="social-media">
-                <h2>Follow Us</h2>
-                <div class="medias">
-                    <a href="#"><i class="fa fa-youtube"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
-                </div>
-                </div>
-            <div class="subscribe">
-                <h2>Subscribe Our Newsletter</h2>
-                <input type="email" placeholder="Your email address">
-                <button class="explorebtn">Sign up</button>
+          <div class="social-media">
+            <h2>Follow Us</h2>
+            <div class="medias">
+              <a href="#"><i class="fa fa-youtube"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>
-            <div class="payment">
-                <h2>Payment</h2>
-                <div class="payment-methods">
-                    <i class="fa fa-cc-visa"></i>
-                    <i class="fa fa-cc-paypal"></i>
-                    <i class="fa fa-cc-mastercard"></i>
-                    <i class="fab fa-cc-apple-pay"></i>
-                    <i class="fa fa-cc-amex"></i>
-                </div>
+          </div>
+          <div class="subscribe">
+            <h2>Subscribe Our Newsletter</h2>
+            <input type="email" placeholder="Your email address" />
+            <button class="explorebtn">Sign up</button>
+          </div>
+          <div class="payment">
+            <h2>Payment</h2>
+            <div class="payment-methods">
+              <i class="fa fa-cc-visa"></i>
+              <i class="fa fa-cc-paypal"></i>
+              <i class="fa fa-cc-mastercard"></i>
+              <i class="fab fa-cc-apple-pay"></i>
+              <i class="fa fa-cc-amex"></i>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <footer>
-        <div class="foot-note">
-            <p>
-                Proudly powered by Gutenify and WordPress.
-            </p>
-        </div>
+      <div class="foot-note">
+        <p>Proudly powered by Gutenify and WordPress.</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
