@@ -113,23 +113,26 @@ function handleMouseOver() {
 function ServicesHandleMouseOver() {
     const prev = document.getElementById('services-prev');
     const next = document.getElementById('services-next');
-
-    prev.style.display = 'block';
-    next.style.display = 'block';
-    const carouselControls = document.querySelector('.services-carousel-controls');
-    carouselControls.style.display = 'flex';
-    prev.style.animation = 'slideInLeft 0.5s forwards';
-    next.style.animation = 'slideInRight 0.5s forwards';
+    if (window.innerWidth > 768) {
+        prev.style.display = 'block';
+        next.style.display = 'block';
+        const carouselControls = document.querySelector('.services-carousel-controls');
+        carouselControls.style.display = 'flex';
+        prev.style.animation = 'slideInLeft 0.5s forwards';
+        next.style.animation = 'slideInRight 0.5s forwards';
+    }
 }
 
 function TestimonialHandleMouseOver() {
     const prev = document.getElementById('testimonial-prev');
     const next = document.getElementById('testimonial-next');
-
-    prev.style.display = 'block';
-    next.style.display = 'block';
-    prev.style.animation = 'slideInLeft 0.5s forwards';
-    next.style.animation = 'slideInRight 0.5s forwards';
+    //check for viewport and display the controls only if the viewport is more than 768px
+    if(window.innerWidth > 768){
+        prev.style.display = 'block';
+        next.style.display = 'block';
+        prev.style.animation = 'slideInLeft 0.5s forwards';
+        next.style.animation = 'slideInRight 0.5s forwards';
+    }
 }
 function ServicesHandleMouseOut() {
     const prev = document.getElementById('services-prev');
