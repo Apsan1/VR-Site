@@ -32,6 +32,7 @@ nav {
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: 1.3% 5%;
+    top: 0;
     background-color: #000000;
     position: fixed;
     z-index: 1000;
