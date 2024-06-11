@@ -15,7 +15,11 @@ function changeItem(index) {
         if(isGirlSlide){
             document.getElementsByClassName('girl-hero')[0].style.display = 'none';
         }else{
-            document.getElementsByClassName('girl-hero')[0].style.display = 'block';
+            if(window.innerWidth < 768){
+                document.getElementsByClassName('girl-hero')[0].style.display = 'block';
+                
+            }
+            document.getElementsByClassName('girl-hero')[0].style.display = 'none';
         }
     });
 }
@@ -140,7 +144,6 @@ function ServicesHandleMouseOut() {
 } 
 
 function TestimonialHandleMouseOut() {
-    console.log('Mouse out');
     const prev = document.getElementById('testimonial-prev');
     const next = document.getElementById('testimonial-next');
     
