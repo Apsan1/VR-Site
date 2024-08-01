@@ -1214,6 +1214,7 @@ section {
   font-weight: 600;
   text-align: center;
   margin-bottom: 30px;
+  text-wrap: wrap;
 }
 .subscribe input {
   padding: 10px;
@@ -1469,6 +1470,18 @@ footer {
 }
 
 /* Responsive */
+@media screen and (max-width: 420px){
+  .social-media {
+    display: none;
+  }
+  .subscribe {
+    display: none !important;
+  }
+  .payment {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     display: flex;
@@ -1530,14 +1543,14 @@ footer {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: clamp(20px, 12px + 2.5vw, 60px);
   }
   .other-navs ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    gap: 60px;
-    justify-content: center;
+    gap: clamp(20px, 12px + 2.5vw, 60px);
+    justify-content: space-between;
     align-items: center;
   }
   .other-navs a {
