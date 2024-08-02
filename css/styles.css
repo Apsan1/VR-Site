@@ -59,10 +59,12 @@ nav ul li {
 }
 nav ul li a,
 nav ul li button {
+  text-wrap: nowrap;
   color: #fff;
   font-weight: 700;
   text-decoration: none;
-  padding: 1px 14px;
+  font-size: clamp(14px, 12.8px + 0.375vw, 20px);
+  padding: 1px clamp(2px, 0.4px + 0.5vw, 10px);
 }
 nav ul li .loginbutton {
   display: flex;
@@ -73,7 +75,6 @@ nav ul li .loginbutton {
 nav ul li button {
   background-color: transparent;
   font: inherit;
-  font-size: 1.1rem;
   font-weight: 500;
   width: 150px;
   height: 55px;
@@ -113,7 +114,7 @@ nav ul li ul li {
   margin: 0;
 }
 nav ul li ul li a {
-  padding: 10px;
+  padding: clamp(2px, 0.4px + 0.5vw, 10px);
 }
 .nav-toggle {
   display: none;
