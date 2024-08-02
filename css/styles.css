@@ -2137,3 +2137,24 @@ footer {
     gap: 20px;
   }
 }
+
+.connect-with-apsan .connect{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40px;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.connect-with-apsan .connect a{
+  color: #66fcf1;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.connect-with-apsan .connect a:hover{
+  color: #f78550;
+  transform: scale(1.1);
+}
